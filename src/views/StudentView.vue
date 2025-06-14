@@ -115,6 +115,7 @@ const filteredAndSortedStudents = computed(() => {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 4rem;
     gap: 2rem;
     flex-grow: 1;
 }
