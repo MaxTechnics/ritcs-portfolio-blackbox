@@ -59,7 +59,7 @@ import { ref, computed } from 'vue';
 //   bob_brown: { first_name: 'Bob', last_name: 'Brown', traject: 'AVT' },
 // };
 
-const selectedFilter = ref<'all' | 'avt' | 'real' | 'prod' | 'name'>('name');
+const selectedFilter = ref<'all' | 'avt' | 'real' | 'prod' | 'name'>('all');
 const searchQuery = ref('');
 
 const studentsArray = computed(() => Object.values(students));
