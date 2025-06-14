@@ -4,15 +4,15 @@
 
     <RouterView v-slot="{ Component }">
       <template v-if="Component">
-        <Transition name="fade_core" mode="out-in">
-          <Suspense timeout=100>
-            <component :is="Component" />
+        <!-- <Transition name="fade_core" mode="out-in"> -->
+        <Suspense timeout=100>
+          <component :is="Component" />
 
-            <template #fallback>
-              <h1>thinking about it</h1>
-            </template>
-          </Suspense>
-        </Transition>
+          <template #fallback>
+            <h1>thinking about it</h1>
+          </template>
+        </Suspense>
+        <!-- </Transition> -->
       </template>
     </RouterView>
 
@@ -44,7 +44,7 @@ const view = ref<'home' | 'student' | 'project'>('student');
 .fade_core-enter-from,
 .fade_core-leave-to {
 	opacity: 0;
-  scale: 0.9;
+  // scale: 0.9;
 }
 
 main {
