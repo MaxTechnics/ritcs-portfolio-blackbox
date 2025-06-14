@@ -31,7 +31,7 @@
         </div>
         <div class="">
             <TransitionGroup name="list" tag="div" class="usergrid">
-                <UserCard v-for="person in filteredAndSortedStudents" :key="person.first_name + person.last_name" :name="`${person.first_name} ${person.last_name}`" :trajectory="person.traject" />
+                <UserCard v-for="person in filteredAndSortedStudents" @click="router.push({ path: `/student/${person.id}` })" :key="person.first_name + person.last_name" :name="`${person.first_name} ${person.last_name}`" :trajectory="person.traject" />
             </TransitionGroup>
         </div>
     </section>
@@ -42,6 +42,11 @@ import UserCard from '../components/UserCard.vue';
 import { students, type Traject } from '@/data/students';
 import TextField from '@/components/TextField.vue';
 import { ref, computed } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter()
+
+
 
 // type Traject = 'AVT' | 'Realisatie' | 'Productie';
 
