@@ -31,6 +31,12 @@ const router = createRouter({
             component: () => import('@/views/StudentView.vue'),
         },
         {
+            path: '/student/:name',
+            name: 'Student Detail',
+            meta: { title: 'Student' },
+            component: () => import('@/views/StudentDetailView.vue'),
+        },
+        {
             path: '/:pathMatch(.*)*',
             name: '404 Page',
             redirect: '/'
