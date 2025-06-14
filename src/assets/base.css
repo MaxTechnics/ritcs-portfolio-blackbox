@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&display=swap');
+
+:root {
+  --header-yellow: #fff388;
+  --bg-yellow: #fff8b9;
+  --bg-grey: #f4f4f4;
+  --yellow: #ffef5a;
+  --pink: #ff96bc;
+  --purple: #d2a4ff;
+  --blue: #54f5ff;
+  --turquoise: #8cffcf;
+  --green: #99ff96;
+  --primary: #54ffd6;
+
+  --content-width: 100rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}

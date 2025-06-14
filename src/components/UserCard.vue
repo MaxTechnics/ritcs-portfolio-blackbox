@@ -1,0 +1,46 @@
+<template>
+    <div class="usercard">
+        <div class="box">
+
+        </div>
+        <h3>{{ name }}</h3>
+        <p>{{ trajectory }}</p>
+    </div>
+</template>
+
+<script setup lang="ts">
+defineProps<{
+    name: string;
+    trajectory: string;
+}>()
+</script>
+
+<style lang="scss" scoped>
+.temp {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+.usercard {
+    border: 2px solid black;
+    padding: 2rem;
+    box-shadow: 5px 5px 0 #000;
+    width: min-content;
+    transition: box-shadow 0.2s ease,
+}
+
+.usercard:hover {
+    box-shadow: 8px 8px 0 #000;
+}
+
+h3 {
+    text-wrap: wrap;
+}
+
+.box {
+    aspect-ratio: 1/1;
+    width: 250px;
+    background-color: red; 
+    border-radius: 5px;
+}
+</style>
