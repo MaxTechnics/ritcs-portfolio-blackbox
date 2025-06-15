@@ -4,7 +4,7 @@
         <div class="nav__links">
             <RouterLink :class="{ active: route.path === '/' }" to="/">Home</RouterLink>
             <RouterLink :class="{ active: route.path === '/projects' }" to="/projects">Projecten</RouterLink>
-            <!-- <RouterLink :class="{ active: route.path === '/trajectories' }" to="/trajectories">Trajecten</RouterLink> -->
+            <RouterLink :class="{ active: route.path === '/functions' }" to="/functions">Functies</RouterLink>
             <RouterLink :class="{ active: route.path === '/students' }" to="/students">Studenten</RouterLink>
         </div>
         <div class="right"></div>

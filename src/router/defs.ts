@@ -18,12 +18,12 @@ const router = createRouter({
             meta: { title: 'Projecten' },
             component: () => import('@/views/ProjectView.vue'),
         },
-        // {
-        // path: '/trajectories',
-        // name: 'Trajectories',
-        // meta: { title: 'Trajecten' },
-        // component: () => import('@/views/TrajectoryView.vue'),
-        // },
+        {
+            path: '/functions',
+            name: 'Functions',
+            meta: { title: 'Functies' },
+            component: () => import('@/views/JobView.vue'),
+        },
         {
             path: '/students',
             name: 'Students',
