@@ -29,11 +29,9 @@
 
             <TextField v-if="selectedFilter === 'name'" v-model="searchQuery" placeholder="Zoeken" />
         </div>
-        <div class="">
-            <TransitionGroup name="list" tag="div" class="usergrid">
-                <UserCard v-for="person in filteredAndSortedStudents" @click="router.push({ path: `/student/${person.id}` })" :key="person.first_name + person.last_name" :name="`${person.first_name} ${person.last_name}`" :trajectory="person.traject" />
-            </TransitionGroup>
-        </div>
+        <TransitionGroup name="list" tag="div" class="usergrid">
+            <UserCard v-for="person in filteredAndSortedStudents" @click="router.push({ path: `/student/${person.id}` })" :key="person.first_name + person.last_name" :name="`${person.first_name} ${person.last_name}`" :trajectory="person.traject" />
+        </TransitionGroup>
     </section>
 </template>
 
