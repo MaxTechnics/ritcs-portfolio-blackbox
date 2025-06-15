@@ -253,6 +253,4 @@ export const students: { [name: string]: PortfolioStudent } = {
         traject: 'AVT',
         website: 'maxim.infonet.media'
     }
-} as const;
-
-type StudentKey = keyof typeof students;
+};
