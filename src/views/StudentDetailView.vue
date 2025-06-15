@@ -16,6 +16,9 @@
             <h2>Projecten</h2>
 
             <p>// List</p>
+            <ul>
+                <li v-for="project in filteredProjects" :key="project.id">{{ project.title }}</li>
+            </ul>
         </div>
     </section>
     <section v-else>
@@ -26,10 +29,11 @@
 
 <script setup lang="ts">
 import { students, type PortfolioStudent } from '@/data/students';
-import { onBeforeMount, ref, watch } from 'vue';
+import { onBeforeMount, ref, watch, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { useQRCode } from '@vueuse/integrations/useQRCode';
-import { computed } from 'vue';
+import type { PortfolioProject } from '@/data/projects';
+import { projects as allProjects } from '@/data/projects'; // Assuming you have a projects data file
 
 const route = useRoute();
 const activeData = ref<PortfolioStudent>();
@@ -41,6 +45,13 @@ const qr = useQRCode(websiteforqr, {
         dark: '#00F',  // Blue dots
         light: '#0000' // Transparent background
     }
+});
+
+const filteredProjects = computed(() => {
+    if (!activeData.value) return [];
+    return allProjects.filter(project =>
+        project.credits.some(credit => credit.personID === activeData.value?.id)
+    );
 });
 
 const init = () => {
