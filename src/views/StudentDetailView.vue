@@ -97,6 +97,10 @@ section {
         font-size: 5rem;
     }
 
+    p {
+        font-size: 2rem;
+    }
+
     .qr {
         height: 200px;
     }
