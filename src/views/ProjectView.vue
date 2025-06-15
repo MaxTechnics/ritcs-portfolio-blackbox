@@ -9,33 +9,43 @@
                         <span>Alle</span>
                     </label>
                     <label>
-                        <input type="radio" name="radio" v-model="selectedFilter" value="avt" />
+                        <input type="radio" name="radio" v-model="selectedFilter" value="year1" />
                         <span>1e jaar</span>
                     </label>
                     <label>
-                        <input type="radio" name="radio" v-model="selectedFilter" value="real" />
+                        <input type="radio" name="radio" v-model="selectedFilter" value="year2" />
                         <span>2e jaar</span>
                     </label>
                     <label>
-                        <input type="radio" name="radio" v-model="selectedFilter" value="prod" />
+                        <input type="radio" name="radio" v-model="selectedFilter" value="year3" />
                         <span>3e jaar</span>
                     </label>
                 </div>
             </fieldset>
-
-            <TextField v-if="selectedFilter === 'name'" v-model="searchQuery" placeholder="Zoeken" />
         </div>
-        <ProjectCard v-for="proj in projects" :key="proj.id" :title="proj.title" :tagline="proj.subtitle" description="Plankgas en plastronneke" :tags="['AVT', 'Multicam']" />
+        <ProjectCard v-for="proj in filteredProjects" :key="proj.id" :title="proj.title" :tagline="proj.subtitle" :description="proj.description" :tags="proj.tags" />
     </section>
 </template>
 
 <script setup lang="ts">
 import ProjectCard from '@/components/ProjectCard.vue';
 import { projects } from '@/data/projects';
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
-const selectedFilter = ref();
+type YearFitler = 'all' | 'year1' | 'year2' | 'year3';
+const selectedFilter = ref<YearFitler>('all');
 
+const filteredProjects = computed(() => {
+    if (selectedFilter.value === 'all') return projects;
+
+    const yearMap: Record<Exclude<YearFitler, 'all'>, string> = {
+        year1: '2223',
+        year2: '2324',
+        year3: '2425'
+    };
+
+    return projects.filter(proj => proj.workyear === yearMap[selectedFilter.value as Exclude<YearFitler, 'all'>]);
+});
 </script>
 
 <style lang="scss" scoped>
