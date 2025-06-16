@@ -15,10 +15,9 @@
         <div class="projects">
             <h2>Projecten</h2>
 
-            <p>// List</p>
-            <ul>
-                <li v-for="project in filteredProjects" :key="project.id">{{ project.title }}</li>
-            </ul>
+            <div class="projdetails">
+                <DetailViewProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" />
+            </div>
         </div>
     </section>
     <section v-else>
@@ -32,8 +31,8 @@ import { students, type PortfolioStudent } from '@/data/students';
 import { onBeforeMount, ref, watch, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { useQRCode } from '@vueuse/integrations/useQRCode';
-import type { PortfolioProject } from '@/data/projects';
 import { projects as allProjects } from '@/data/projects'; // Assuming you have a projects data file
+import DetailViewProjectCard from '@/components/DetailViewProjectCard.vue';
 
 const route = useRoute();
 const activeData = ref<PortfolioStudent>();
@@ -42,7 +41,7 @@ const websiteforqr = computed(() => {
 })
 const qr = useQRCode(websiteforqr, {
     color: {
-        dark: '#00F',  // Blue dots
+        dark: '#000',  // Blue dots
         light: '#0000' // Transparent background
     }
 });
@@ -78,7 +77,7 @@ watch(() => route.params.name, (newname, oldname) => {
 
 <style lang="scss" scoped>
 section {
-    background: red;
+    // background: red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +86,7 @@ section {
 
 .hero {
     width: var(--content-width);
-    background-color: green;
+    // background-color: green;
     display: flex;
     padding: 2rem;
     gap: 2rem;
@@ -108,8 +107,18 @@ section {
 
 .projects {
     padding: 0 2rem 2rem 2rem;
-    background: blue;
+    // background: blue;
     width: var(--content-width);
+
+    h2 {
+        padding: 2rem 0;
+    }
+}
+
+.projdetails {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .box {
