@@ -1,7 +1,7 @@
 <template>
     <div class="projcard projcard-blue">
         <div class="projcard-innerbox">
-            <img class="projcard-img" src="https://picsum.photos/800/600?image=1041" />
+            <img class="projcard-img" :src="image" />
             <div class="projcard-textbox">
                 <div class="projcard-title">{{ title }}</div>
                 <div class="projcard-subtitle">{{ tagline }}</div>
@@ -87,6 +87,8 @@ const props = defineProps<{
 	top: 0;
 	left: 0;
 	transition: transform 0.2s ease;
+
+    object-fit: cover;
 }
 .projcard:nth-child(2n) .projcard-img {
 	left: initial;
