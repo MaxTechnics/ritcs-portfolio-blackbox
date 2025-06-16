@@ -37,6 +37,12 @@ const router = createRouter({
             component: () => import('@/views/StudentDetailView.vue'),
         },
         {
+            path: '/config',
+            name: 'Config',
+            meta: { title: 'Conf' },
+            component: () => import('@/views/ConfigView.vue'),
+        },
+        {
             path: '/:pathMatch(.*)*',
             name: '404 Page',
             redirect: '/'
