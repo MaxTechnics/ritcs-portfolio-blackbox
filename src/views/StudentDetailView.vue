@@ -1,5 +1,5 @@
 <template>
-    <section v-if="activeData">
+    <section v-if="activeData && activeData.traject !== 'Lost'">
         <div class="hero">
             <div class="box"></div>
             <span>
@@ -20,8 +20,11 @@
             </div>
         </div>
     </section>
-    <section v-else>
+    <section v-else-if="!activeData">
         <h1>Student not found, are you being delusional?</h1>
+    </section>
+    <section v-else>
+        <h1>We lost this one</h1>
     </section>
 </template>
 
