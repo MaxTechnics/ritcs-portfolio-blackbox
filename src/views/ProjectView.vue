@@ -23,7 +23,7 @@
                 </div>
             </fieldset>
         </div>
-        <ProjectCard v-for="proj in filteredProjects" :key="proj.id" :title="proj.title" :tagline="proj.subtitle" :description="proj.description" :tags="proj.tags" />
+        <ProjectCard v-for="proj in filteredProjects" @click="router.push({ path: `/project/${proj.id}` })" :key="proj.id" :title="proj.title" :tagline="proj.subtitle" :description="proj.description" :tags="proj.tags" :image="proj.image" />
     </section>
 </template>
 
@@ -31,6 +31,9 @@
 import ProjectCard from '@/components/ProjectCard.vue';
 import { projects } from '@/data/projects';
 import { ref, computed } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter()
 
 type YearFitler = 'all' | 'year1' | 'year2' | 'year3';
 const selectedFilter = ref<YearFitler>('all');
