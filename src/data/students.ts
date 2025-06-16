@@ -1,4 +1,4 @@
-export type Traject = 'AVT' | 'Realisatie' | 'Productie';
+export type Traject = 'AVT' | 'Realisatie' | 'Productie' | 'Lost';
 
 export interface PortfolioStudent {
     id: string;
@@ -251,6 +251,120 @@ export const students: { [name: string]: PortfolioStudent } = {
         last_name: 'Coppieters',
         tagline: 'Professional nerd :)',
         traject: 'AVT',
-        website: 'maxim.infonet.media'
+        website: 'https://maxim.infonet.media'
+    },
+    'thibaultschroeven': {
+        id: 'thibaultschroeven',
+        first_name: 'Thibault',
+        last_name: 'Schroeven',
+        traject: 'Lost'
+    },
+    'nelgevaerts': {
+        id: 'nelgevaerts',
+        first_name: 'Nel',
+        last_name: 'Gevaerts',
+        traject: 'Lost'
+    },
+    'nemosauzeat': {
+        id: 'nemosauzeat',
+        first_name: 'Nemo',
+        last_name: 'Sauzeat',
+        traject: 'Lost'
+    },
+    'maxjaamann': {
+        id: 'maxjaamann',
+        first_name: 'Max',
+        last_name: 'Jaamann',
+        traject: 'Lost'
+    },
+    'amelieschreurs': {
+        id: 'amelieschreurs',
+        first_name: 'Amelie',
+        last_name: 'Schreurs',
+        traject: 'Lost'
+    },
+    'bapkekauwenbergs': {
+        id: 'bapkekauwenbergs',
+        first_name: 'Bapke',
+        last_name: 'Kauwenbergs',
+        traject: 'Lost'
+    },
+    'seppevijverman': {
+        id: 'seppevijverman',
+        first_name: 'Seppe',
+        last_name: 'Vijverman',
+        traject: 'Lost'
+    },
+    'lisekerckx': {
+        id: 'lisekerckx',
+        first_name: 'Lise',
+        last_name: 'Kerckx',
+        traject: 'Lost'
+    },
+    'lukasjoosten': {
+        id: 'lukasjoosten',
+        first_name: 'Lukas',
+        last_name: 'Joosten',
+        traject: 'Lost'
+    },
+    'abdoulienije': {
+        id: 'abdoulienije',
+        first_name: 'Abdoulie',
+        last_name: 'Nije',
+        traject: 'Lost'
+    },
+    'raoullangermans': {
+        id: 'raoullangermans',
+        first_name: 'Raoul',
+        last_name: 'Langermans',
+        traject: 'Lost' // TODO verify
     }
 };
+
+export type StudentId = 'thiebewouters'
+    | 'thanitsornverschueren'
+    | 'stevenvantichelen'
+    | 'sazanloomans'
+    | 'robincooremans'
+    | 'pimvergeest'
+    | 'mozalbak'
+    | 'owenvandoorslaer'
+    | 'mirademulder'
+    | 'margauxdecleyre'
+    | 'martvandenheuvel'
+    | 'marievermeulen'
+    | 'maartenaerssens'
+    | 'linavannerum'
+    | 'kianikhatrichetri'
+    | 'julescnudde'
+    | 'lukasvleugels'
+    | 'khanyisilevanderheide'
+    | 'femkebeeckman'
+    | 'dallaechin'
+    | 'casderidder'
+    | 'brentdewin'
+    | 'alexandramees'
+    | 'aimyvandenbemden'
+    | 'warddeleersnyder'
+    | 'lukakeunen'
+    | 'driesvandormael'
+    | 'wouttemmerman'
+    | 'brentcauberghs'
+    | 'nansialkhateeb'
+    | 'opheliadelhaye'
+    | 'ferremeyhi'
+    | 'tuurvangrimde'
+    | 'jonaschepens'
+    | 'maximcoppieters'
+    | 'thibaultschroeven'
+    | 'nelgevaerts'
+    | 'nemosauzeat'
+    | 'maxjaamann'
+    | 'amelieschreurs'
+    | 'bapkekauwenbergs'
+    | 'seppevijverman'
+    | 'lisekerckx'
+    | 'lukasjoosten'
+    | 'abdoulienije'
+    | 'raoullangermans';
+
