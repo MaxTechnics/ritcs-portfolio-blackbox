@@ -11,12 +11,17 @@ import REPO_ANDERLECHT_CHRISTOPHE from '@/assets/projectimg/repo_anderlecht_chri
 import REPO_ANDERLECHT_SKATETOUR from '@/assets/projectimg/repo_anderlecht_skatetour.jpg';
 import REPO_ANDERLECHT_MUSCLES from '@/assets/projectimg/repo_anderlecht_muscles.jpg';
 
-import { students } from "./students";
+import PRAKT_1_MATISSE from '@/assets/projectimg/prakt_1_matisse.jpg';
+import PRAKT_1_RESET from '@/assets/projectimg/prakt_1_reset.jpg';
+import PRAKT_1_CRESENDO from '@/assets/projectimg/prakt_1_cresendo.jpg';
+import PRAKT_1_JAZZ from '@/assets/projectimg/prakt_1_jazz.jpg';
+
+import { students, type StudentId } from "./students";
 
 type PortfolioTag = 'AVT' | 'Productie' | 'Realisatie';
-type PortfolioFunction = 'Camera' | 'DOP' | 'Montage' | 'Regie' | 'Regie Assistent' | 'Geluid' | 'Chef Geluid' | 'Mixing' | 'Licht' | 'Productie' | 'Catering' | 'Acteur' | 'Grafisch Design' | 'Met dank aan';
+type PortfolioFunction = 'Camera' | 'DOP' | 'Montage' | 'Regie' | 'Regie Assistent' | 'Geluid' | 'Chef Geluid' | 'Mixing' | 'Licht' | 'Productie' | 'Catering' | 'Acteur' | 'Grafisch Design' | 'Grading' | 'Techniek' | 'Chef Techniek' | 'Met dank aan';
 type Credit = {
-    personID: string;
+    personID: StudentId;
     function: PortfolioFunction;
 }
 
@@ -27,7 +32,8 @@ export interface PortfolioProject {
     workyear: '2223' | '2324' | '2425';
     description: string;
     image: string;
-    tags: PortfolioTag[];
+    // tags: PortfolioTag[];
+    tags: string[]; // TODO just silencing these during collaboration to make intellisense shut the fuck up
     personal: boolean;
     owner?: keyof typeof students;
     credits: Credit[];
@@ -257,29 +263,210 @@ export const projects: PortfolioProject[] = [
             { personID: 'aimyvandenbemden', function: 'Productie' },
         ]
     },
-
-
-
-
-
-
-
-
-
+    // Year 2
     {
-        id: 'mxm_detweedegolf',
-        title: 'De Tweede Golf',
-        subtitle: 'Captatie en montage',
-        workyear: '2425',
-        description: 'Tijdens stage bij INSCENE kreeg ik de oppertuniteit om de volledige captatie en montage van een theatervoorsetlling "De Tweede Golf" te beheren en uit te voeren.',
-        image: '',
-        tags: ['Camera', 'Montage'],
-        personal: true,
-        owner: 'maximcoppieters',
+        id: 'prakt_1_matisse',
+        title: 'De Doorbraak',
+        subtitle: 'Praktijk 1, Matisse & the martians',
+        workyear: '2324',
+        description: 'Jonge, nieuwe bands worden voorgesteld om op deze manier verschillende generaties kennis te laten maken met de hedendaagse muziekscene en opkomende artiesten. In deze aflevering staat de Limburgse indie-rock band \'Matisse & The Martians\' in de spotlight!',
+        image: PRAKT_1_MATISSE,
+        tags: ['Multicam', 'Muziek'],
+        personal: false,
         credits: [
-            { personID: 'maximcoppieters', function: 'Camera' },
-            { personID: 'maximcoppieters', function: 'Montage' },
-            { personID: 'maximcoppieters', function: 'Technisch verantwoordelijke' }
+            { personID: 'femkebeeckman', function: 'Grading' },
+            { personID: 'brentcauberghs', function: 'Camera' },
+            { personID: 'julescnudde', function: 'Camera' },
+            { personID: 'julescnudde', function: 'Regie' },
+            { personID: 'maximcoppieters', function: 'Chef Geluid' },
+            { personID: 'warddeleersnyder', function: 'Camera' },
+            { personID: 'opheliadelhaye', function: 'Regie' },
+            { personID: 'casderidder', function: 'Grafisch Design' },
+            { personID: 'kianikhatrichetri', function: 'Regie' },
+            { personID: 'alexandramees', function: 'Productie' },
+            { personID: 'ferremeyhi', function: 'Productie' },
+            { personID: 'jonaschepens', function: 'Camera' },
+            { personID: 'amelieschreurs', function: 'Productie' },
+            { personID: 'khanyisilevanderheide', function: 'Camera' },
+            { personID: 'owenvandoorslaer', function: 'Licht' },
+            { personID: 'driesvandormael', function: 'Camera' },
+            { personID: 'tuurvangrimde', function: 'Camera' },
+            { personID: 'linavannerum', function: 'Camera' },
+            { personID: 'pimvergeest', function: 'Camera' },
+            { personID: 'marievermeulen', function: 'Camera' },
+            { personID: 'lukakeunen', function: 'Camera' },
+            { personID: 'thiebewouters', function: 'Camera' },
+            { personID: 'thiebewouters', function: 'Regie' },
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'aimyvandenbemden', function: 'Productie' },
+            { personID: 'lisekerckx', function: 'Productie' },
+        ]
+    },
+    {
+        id: 'prakt_1_reset',
+        title: 'RE:SET',
+        subtitle: 'Praktijk 1, Dav ID',
+        workyear: '2324',
+        description: 'Een muziekprogramma dat de kijker meeneemt naar de geschiedenis van R&B. De show wordt opgesplitst in 4 delen, 4 decennia: Jaren 50, 70, 90 en nu. Er komt een band spelen: Dav ID. Zij brengen 4 nummers waarvan de stijl volgt met het tijdperk waar we inzitten.',
+        image: PRAKT_1_RESET,
+        tags: ['Multicam', 'Muziek'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Licht' },
+            { personID: 'maartenaerssens', function: 'Chef Techniek' },
+            { personID: 'nansialkhateeb', function: 'Regie' },
+            { personID: 'brentcauberghs', function: 'Regie' },
+            { personID: 'mirademulder', function: 'Regie' },
+            { personID: 'lisekerckx', function: 'Productie' },
+            { personID: 'lukasjoosten', function: 'Techniek' },
+            { personID: 'aimyvandenbemden', function: 'Productie' },
+            { personID: 'tuurvangrimde', function: 'Regie' },
+            { personID: 'thanitsornverschueren', function: 'Techniek' },
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'alexandramees', function: 'Productie' },
+            { personID: 'ferremeyhi', function: 'Productie' }
+        ]
+    },
+    {
+        id: 'prakt_1_cresendo',
+        title: 'Crescendo',
+        subtitle: 'Praktijk 1, Warm Exit',
+        workyear: '2324',
+        description: 'In Deze wekelijkse Show komt er een nieuwe alternatieve up-coming artiest(en) langs die wij bij Crescendo een podium willen geven. Tijdens het programma leren wij de artiest(en) beter kennen d.m.v. interview, reportage en live performances. Deze aflevering hebben we de band \'Warm Exit\' een Brusselse band met een unieke sound in de Post-Punk scene.',
+        image: PRAKT_1_CRESENDO,
+        tags: ['Multicam', 'Muziek'],
+        personal: false,
+        credits: [
+            { personID: 'femkebeeckman', function: 'Grading' },
+            { personID: 'margauxdecleyre', function: 'Regie' },
+            { personID: 'brentdewin', function: 'Licht' },
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'stevenvantichelen', function: 'Chef Techniek' },
+            { personID: 'pimvergeest', function: 'Regie' },
+            { personID: 'marievermeulen', function: 'Regie' },
+            { personID: 'lukasvleugels', function: 'Regie' },
+            { personID: 'aimyvandenbemden', function: 'Productie' },
+            { personID: 'lisekerckx', function: 'Productie' },
+            { personID: 'alexandramees', function: 'Productie' },
+            { personID: 'ferremeyhi', function: 'Productie' }
+        ]
+    },
+    {
+        id: 'prakt_1_jazz',
+        title: 'The Jazz Bar Live',
+        subtitle: 'Praktijk 1, The Jazz Bar',
+        workyear: '2324',
+        description: 'Het tijdelijke schoolse productiehuis \'Ampoule\' stelt "The Jazz Bar Live" voor. Een 30 minuten durend studioprogramma waarin iedere aflevering een nieuwe band zich komt tonen adhv. hun eigen muziek in de setting van een muziek café. Aansluitend bij de muzikale performances horen interviews en korte reportages.',
+        image: PRAKT_1_JAZZ,
+        tags: ['Multicam', 'Muziek'],
+        personal: false,
+        credits: [
+            { personID: 'warddeleersnyder', function: 'Chef Geluid' },
+            { personID: 'warddeleersnyder', function: 'Techniek' },
+            { personID: 'warddeleersnyder', function: 'Grafisch Design' },
+            { personID: 'raoullangermans', function: 'Regie' },
+            { personID: 'raoullangermans', function: 'Mixing' },
+            { personID: 'ferremeyhi', function: 'Productie' },
+            // {personID: 'ferremeyhi', function: 'Opnameleider'},
+            { personID: 'jonaschepens', function: 'Licht' },
+            { personID: 'jonaschepens', function: 'Chef Geluid' },
+            { personID: 'jonaschepens', function: 'Chef Techniek' },
+            { personID: 'amelieschreurs', function: 'Productie' },
+            { personID: 'martvandenheuvel', function: 'Mixing' },
+            { personID: 'khanyisilevanderheide', function: 'Regie' },
+            { personID: 'khanyisilevanderheide', function: 'Mixing' },
+            { personID: 'driesvandormael', function: 'Grafisch Design' },
+            { personID: 'driesvandormael', function: 'Techniek' },
+            { personID: 'linavannerum', function: 'Regie' },
+            { personID: 'linavannerum', function: 'Mixing' },
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'aimyvandenbemden', function: 'Productie' },
+            { personID: 'alexandramees', function: 'Productie' },
+            { personID: 'lisekerckx', function: 'Productie' }
         ]
     }
-]
+
+
+
+
+
+
+    // Aimy's contributions
+    // {
+    //         id: 'wildcard_MONOPOLY'
+    //     title: 'Monopoly',
+    //         subtitle:
+    //             workyear: '2425'
+    //     description:
+    //         Image:
+    //             Tags:
+    //         Personal:
+    //             credits:
+
+    //     }
+
+    // {
+    //         id: 'wildcard_SYMPOSIUM'
+    //     title: 'SYMPOSIUM',
+    //         subtitle:
+    //             workyear: '2425'
+    //     description:
+    //         Image:
+    //             Tags:
+    //         Personal:
+    //             credits:
+
+    //     }
+
+    // {
+    //         id: 'wildcard_RikMeyhi',
+    //         title: 'Rik Meyhi',
+    //         subtitle: '', // XXX
+    //         workyear: '2425',
+    //         description: 'Een portret over ex-wielrenner en mijn opa: Rik Meyhi',
+    //         image: '', // TODO mxm
+    //         tags: [],
+    //         personal: true,
+    //         credits: [] // XXX
+    // },
+    // {
+    //         id: 'wildcard_LunaeDolore'
+    //     title: 'Luna e Dolore',
+    //         subtitle:
+    //             workyear: '2425'
+    //     description: 'Een experimentele promotievideo voor het kledingmerk Luna e Dolore'
+    //     Image:
+    //         Tags:
+    //             Personal:
+    //         credits: 
+
+    // }
+
+    // {
+    //         id: 'wildcard_DurvenDromen'
+    //     title: 'Durven Dromen',
+    //         subtitle:
+    //             workyear: '2425'
+    //     description: 'Een minidocu over een gepassioneerd keramiekster die haar dromen volgt
+    //     Personal:
+    //         credits: 
+
+    // }()per
+
+    // {
+    //         id: 'wildcard_Padoo'
+    //     title: 'Padoo',
+    //         subtitle:
+    //             workyear: '2425'
+    //     description:
+    //         Image:
+    //             Tags: ()''PADOO—een naam zo nieuwsgierig als de paddenstoelen waar het voor staat.Deze korte documentaire volgt Wim en Marie - Laure, een koppel dat zeldzame, exotische paddenstoelen kweekt op hun lokale start - upboerderij.Door  hun ogen ontdekken we de schoonheid, de uitdagingen en de intimiteit van iets samen van de grond af opbouwen.Met PADOO wilde ik nieuwsgierigheid wekken – n,  alleen naar paddenstoelen, maar ook naar de mensen erachter.Het is een stille reis in hun wereld, een uitnodiging tot verbinding.'
+    //         Personal:
+    //     credits: 
+    // tr''true
+    // }Pim[       { 
+    //         ID: 'ferreme 'pimvergeest', function: 'Regie' 'DOP' 'Montage'
+    // }
+
+
+];
