@@ -39,6 +39,7 @@ const router = useRouter();
     font-weight: 600;
     cursor: pointer;
     border-left: 2px solid var(--shadow_color);
+    color: var(--font_color);
 }
 
 // .nav__links {
