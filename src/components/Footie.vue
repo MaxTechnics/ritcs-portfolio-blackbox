@@ -1,12 +1,18 @@
 <template>
     <footer class="footie">
         <span style="margin-right: auto; padding: 2rem;">RITCS Portfolio Event 2025</span>
-        <button class="footie__btn">
+        <button class="footie__btn" @click="router.push('/student/maximcoppieters')">
             <span>Written by Maxim</span><br>
-            <span>Powered by Backstage</span>
+            <!-- <span>Powered by Backstage</span> -->
         </button>
     </footer>
 </template>
+
+<script setup lang="ts">
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+</script>
 
 <style lang="scss" scoped>
 .footie {
