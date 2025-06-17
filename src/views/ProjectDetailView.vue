@@ -22,11 +22,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for=" credit in activeData.credits" :key="credit.function + credit.personID">
+                        <tr v-for="credit in activeData.credits" :key="credit.function + credit.personID">
                             <td>{{ credit.function }}</td>
                             <td>{{ students[credit.personID].first_name }} {{ students[credit.personID].last_name }}</td>
                             <td style="display: flex; justify-content: center; align-content: center;">
-                                <ButtonInput @click="router.push({ path: `/student/${credit.personID}` })">Bekijk student</ButtonInput>
+                                <ButtonInput @click="router.push({ path: `/student/${credit.personID}` })">Bekijken</ButtonInput>
                             </td>
                         </tr>
                     </tbody>
