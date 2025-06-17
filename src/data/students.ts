@@ -228,7 +228,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'ferremeyhi',
         first_name: 'Ferre',
         last_name: 'Meyhi',
-        traject: 'Realisatie',
+        traject: 'Productie',
         website: 'https://ferremeyhi.my.canva.site/portfolio2025'
     },
     'tuurvangrimde': {
