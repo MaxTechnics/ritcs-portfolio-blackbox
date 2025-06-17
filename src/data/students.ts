@@ -318,6 +318,12 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Raoul',
         last_name: 'Langermans',
         traject: 'Lost' // TODO verify
+    },
+    'janamalaeb': {
+        id: 'janamalaeb',
+        first_name: 'Jana',
+        last_name: 'Malaeb',
+        traject: 'Lost' // TODO verify
     }
 };
 
