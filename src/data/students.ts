@@ -32,7 +32,7 @@ import OPHELIA from '@/assets/studentimg/ophelia.png';
 import FERRE from '@/assets/studentimg/ferre.png';
 import TUUR from '@/assets/studentimg/tuur.png';
 // import JONA from '@/assets/studentimg/jona.png';
-import MAXIM from '@/assets/studentimg/maxim.png';
+import GENERIC from '@/assets/studentimg/generic.png';
 
 export type Traject = 'AVT' | 'Realisatie' | 'Productie' | 'Lost';
 
@@ -76,6 +76,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Sazan',
         last_name: 'Loomans',
         traject: 'Productie',
+        website: 'https://sazanloomans.my.canva.site/',
         img: SAZAN
     },
     'robincooremans': {
@@ -163,6 +164,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Kiani',
         last_name: 'Khatri Chetri',
         traject: 'Realisatie',
+        website: 'https://kikhache.my.canva.site/',
         img: KIANI
     },
     'julescnudde': {
@@ -202,7 +204,8 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Dallae',
         last_name: 'Chin',
         traject: 'Realisatie',
-        website: 'https://dallaechin.tumblr.com/'
+        website: 'https://dallaechin.tumblr.com/',
+        img: GENERIC
     },
     'casderidder': {
         id: 'casderidder',
@@ -233,7 +236,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Aimy',
         last_name: 'Vanden Bemden',
         traject: 'Productie',
-        website: 'https://portfolio-aimyvandenbemden.my.canva.site/',
+        website: 'https://readymag.website/u1365942860/5616206/',
         img: AIMY
     },
     'warddeleersnyder': {
@@ -249,7 +252,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Luka',
         last_name: 'Keunen',
         traject: 'Realisatie',
-        website: 'https://lukanie.my.canva.site/portfolio',
+        website: 'https://lukanie.my.canva.site/active-in',
         img: LUKA
     },
     'driesvandormael': {
@@ -280,7 +283,9 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'nansialkhateeb',
         first_name: 'Nansi',
         last_name: 'Alkhateeb',
-        traject: 'Realisatie'
+        traject: 'Realisatie',
+        website: 'https://alkhateebnancy.my.canva.site/',
+        img: GENERIC
     },
     'opheliadelhaye': {
         id: 'opheliadelhaye',
@@ -311,7 +316,8 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Jona',
         last_name: 'Schepens',
         traject: 'AVT',
-        website: 'https://jona-schepens.webnode.be/portfolio/'
+        website: 'https://jona-schepens.webnode.be/portfolio/',
+        img: GENERIC
     },
     'maximcoppieters': {
         id: 'maximcoppieters',
@@ -320,79 +326,91 @@ export const students: { [name: string]: PortfolioStudent } = {
         tagline: 'Professional nerd :)',
         traject: 'AVT',
         website: 'https://maxim.infonet.media',
-        img: MAXIM
+        img: GENERIC
     },
     'thibaultschroeven': {
         id: 'thibaultschroeven',
         first_name: 'Thibault',
         last_name: 'Schroeven',
-        traject: 'Lost'
+        traject: 'Lost',
+        img: GENERIC
     },
     'nelgevaerts': {
         id: 'nelgevaerts',
         first_name: 'Nel',
         last_name: 'Gevaerts',
-        traject: 'Lost'
+        traject: 'Lost',
+        img: GENERIC
     },
     'nemosauzeat': {
         id: 'nemosauzeat',
         first_name: 'Nemo',
         last_name: 'Sauzeat',
-        traject: 'Lost'
+        traject: 'Lost',
+        img: GENERIC
     },
     'maxjaamann': {
         id: 'maxjaamann',
         first_name: 'Max',
         last_name: 'Jaamann',
-        traject: 'Lost'
+        traject: 'Lost',
+        img: GENERIC
     },
     'amelieschreurs': {
         id: 'amelieschreurs',
         first_name: 'Amelie',
         last_name: 'Schreurs',
-        traject: 'Lost'
+        traject: 'Lost',
+        img: GENERIC
     },
     'bapkekauwenbergs': {
         id: 'bapkekauwenbergs',
         first_name: 'Bapke',
         last_name: 'Kauwenbergs',
-        traject: 'Lost'
+        traject: 'Lost',
+        img: GENERIC
     },
     'seppevijverman': {
         id: 'seppevijverman',
         first_name: 'Seppe',
         last_name: 'Vijverman',
-        traject: 'Lost'
+        traject: 'Lost',
+        img: GENERIC
     },
     'lisekerckx': {
         id: 'lisekerckx',
         first_name: 'Lise',
         last_name: 'Kerckx',
-        traject: 'Lost'
+        traject: 'Lost',
+        img: GENERIC
     },
     'lukasjoosten': {
         id: 'lukasjoosten',
         first_name: 'Lukas',
         last_name: 'Joosten',
-        traject: 'Lost'
+        traject: 'Lost',
+        img: GENERIC
     },
     'abdoulienije': {
         id: 'abdoulienije',
         first_name: 'Abdoulie',
         last_name: 'Nije',
-        traject: 'Lost'
+        traject: 'Lost',
+        img: GENERIC
     },
     'raoullangermans': {
         id: 'raoullangermans',
         first_name: 'Raoul',
         last_name: 'Langermans',
-        traject: 'Lost' // TODO verify
+        traject: 'Lost', // TODO verify
+        img: GENERIC
     },
     'janamalaeb': {
         id: 'janamalaeb',
         first_name: 'Jana',
         last_name: 'Malaeb',
-        traject: 'Lost' // TODO verify
+        traject: 'Lost', // TODO verify
+        img: GENERIC
     }
 };
 
