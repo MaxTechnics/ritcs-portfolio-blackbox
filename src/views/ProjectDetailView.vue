@@ -77,7 +77,6 @@ onBeforeMount(() => {
     init()
 })
 
-
 watch(() => route.params.id, (newid, oldid) => {
     init()
 })
@@ -139,7 +138,7 @@ section {
 
 
 .window {
-    background-color: #fff;
+    // background-color: #fff;
     border: 3px solid var(--shadow_color);
     box-shadow: 10px 10px 0 var(--shadow_color);
 }
@@ -174,7 +173,7 @@ tbody {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: var(--purple); /* Light gray or any color you like */
+    background-color: var(--accent_blu); /* Light gray or any color you like */
 }
 
 table td{

@@ -6,7 +6,7 @@
 
 <style lang="scss" scoped>
 .btn-primary {
-    background-color: var(--primary);
+    background-color: var(--accent_ylw);
     border: 2px solid var(--shadow_color);
     font-family: inherit;
     font-size: 2rem;

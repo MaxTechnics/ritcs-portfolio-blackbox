@@ -62,7 +62,7 @@ const filteredCredits = computed(() => {
     // background-color: #fff;
     background-color: var(--bg_color);
     border: 3px solid var(--shadow_color);
-    box-shadow: 10px 10px 0 black;
+    box-shadow: 10px 10px 0 var(--shadow_color);
     margin: auto;
     width: 100%;
 }

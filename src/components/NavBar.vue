@@ -60,7 +60,7 @@ img {
 }
 
 .nav__links a {
-    color: black;
+    color: var(--font_color);
     text-decoration: none;
     font-size: 2.5rem;
     letter-spacing: 2px;
@@ -69,6 +69,6 @@ img {
 }
 
 .right {
-margin-left: auto;
+    margin-left: auto;
 }
 </style>

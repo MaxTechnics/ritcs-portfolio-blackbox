@@ -45,7 +45,7 @@ const websiteforqr = computed(() => {
 })
 const qr = useQRCode(websiteforqr, {
     color: {
-        dark: '#000',  // Blue dots
+        dark: '#fff',  // Blue dots
         light: '#0000' // Transparent background
     }
 });

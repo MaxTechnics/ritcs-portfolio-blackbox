@@ -15,8 +15,11 @@
 
 
   --bg_color: #000000;
-  --shadow_color: #ffffff;
+  --shadow_color: var(--accent_blu);
   --font_color: #ffffff;
+  --accent_red: #E30312;
+  --accent_blu: #292B7E;
+  --accent_ylw: #FED017;
 
   --content-width: 100rem;
 }

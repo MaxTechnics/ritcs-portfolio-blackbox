@@ -10,11 +10,12 @@
 
 <style lang="scss" scoped>
 .header {
-    background-color: var(--header-yellow);
+    background-color: var(--accent_ylw);
     padding: 0 auto;
     height: 40rem;
     overflow: hidden;
     border-bottom: 3px solid var(--shadow_color);
+    color: black;
 }
 
 .header__content {
