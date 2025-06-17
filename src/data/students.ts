@@ -240,7 +240,7 @@ export const students: { [name: string]: PortfolioStudent } = {
     },
     'jonaschepens': {
         id: 'jonaschepens',
-        first_name: 'Jonas',
+        first_name: 'Jona',
         last_name: 'Schepens',
         traject: 'AVT',
         website: 'https://jona-schepens.webnode.be/portfolio/'
