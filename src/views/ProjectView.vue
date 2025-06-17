@@ -58,6 +58,7 @@ const filteredProjects = computed(() => {
     flex-direction: column;
     padding: 4rem;
     gap: 2rem;
+    flex-grow: 1;
 }
 
 
