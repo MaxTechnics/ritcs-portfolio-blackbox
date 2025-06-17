@@ -24,7 +24,16 @@ import PRAKT_3_DANSAERT from '@/assets/projectimg/prakt_3_dansaert.jpg';
 import PRAKT_3_DYSTOPIA from '@/assets/projectimg/prakt_3_dystopia.jpg';
 import PRAKT_3_ADAM from '@/assets/projectimg/prakt_3_adam.jpg';
 
-
+import BC_SPORT_GYMGALA from '@/assets/projectimg/bc_sport_gymgala.jpg';
+import BC_SPORT_BEATRICE from '@/assets/projectimg/bc_sport_beatrice.jpg';
+import BC_SPORT_BOUBA from '@/assets/projectimg/bc_sport_bouba.jpg';
+import BC_SPORT_NILSON from '@/assets/projectimg/bc_sport_nilson.jpg';
+import BC_HYBRIDE_BEYOND from '@/assets/projectimg/bc_hybride_beyond.jpg';
+import BC_HYBRIDE_MAKKELIJK from '@/assets/projectimg/bc_hybride_makkelijk.jpg';
+import BC_HYBRIDE_LIVINGROOM from '@/assets/projectimg/bc_hybride_livingroom.jpg';
+import BC_REALITY_HART_OP_ZOEK from '@/assets/projectimg/bc_reality_hart_op_zoek.jpg';
+import WINTERSCHOOL_POSTITMUUR from '@/assets/projectimg/winterschool_postitmuur.jpg';
+import BC_BRDCSTLB_KAIN from '@/assets/projectimg/bc_brdcstlb_kain.jpg';
 
 import { students, type StudentId } from "./students";
 
