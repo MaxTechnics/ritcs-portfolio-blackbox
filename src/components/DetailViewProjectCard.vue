@@ -3,18 +3,23 @@
         <h2>{{ project.title }}</h2>
         <p>{{ project.description }}</p>
         <table class="weekly__table">
-            <tr>
-                <th>Student</th>
-                <th>Job</th>
-                <!-- <th>Time</th> -->
-            </tr>
-            <tr v-for="credit in project.credits">
-                <td @click="router.push(`/student/${credit.personID}`)">{{ `${students[credit.personID].first_name} ${students[credit.personID].last_name}` || 'Unknown student!' }}</td>
-                <td>{{ credit.function }}</td>
-                <!-- <td>6:00 AM</td> -->
-            </tr>
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Job</th>
+                    <!-- <th>Time</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="credit in filteredCredits">
+                    <td @click="router.push(`/student/${credit.personID}`)">{{ getstudent(credit.personID) }}</td>
+                    <!-- <td @click="router.push(`/student/${credit.personID}`)">{{ `${credit.personID}` }}</td> -->
+                    <td>{{ credit.function }}</td>
+                    <!-- <td>6:00 AM</td> -->
+                </tr>
+            </tbody>
         </table>
-        <ButtonInput class="cardbtn">Bekijk project</ButtonInput>
+        <ButtonInput @click="router.push({ path: `/project/${project.id}` })" class="cardbtn">Bekijk project</ButtonInput>
     </div>
 </template>
 
@@ -23,12 +28,33 @@ import { type PortfolioProject } from '@/data/projects';
 import { students } from '@/data/students';
 import { useRouter } from 'vue-router';
 import ButtonInput from './ButtonInput.vue';
+import { computed } from 'vue';
 
 const router = useRouter();
 
-defineProps<{
+const getstudent = (id: string) => {
+    console.log('studid', id)
+
+    const stobj = students[id]
+    console.log('student obj', stobj);
+
+    return `${stobj.first_name} ${stobj.last_name}`;
+}
+
+const props = defineProps<{
     project: PortfolioProject;
+    filterbystudent?: string;
 }>();
+
+const filteredCredits = computed(() => {
+    if (!props.project.credits) return [];
+
+    return props.filterbystudent
+        ? props.project.credits.filter(
+            (c) => c.personID === props.filterbystudent
+        )
+        : props.project.credits;
+});
 </script>
 
 <style lang="scss" scoped>
