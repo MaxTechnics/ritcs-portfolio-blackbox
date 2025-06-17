@@ -181,7 +181,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Ward',
         last_name: 'Deleersnyder',
         traject: 'AVT',
-        website: 'https://warddelestudent.wixsite.com/warddeleersnyder'
+        website: 'https://warddeleersnyder.com'
     },
     'lukakeunen': {
         id: 'lukakeunen',
