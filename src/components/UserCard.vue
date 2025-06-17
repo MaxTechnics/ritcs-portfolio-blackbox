@@ -1,8 +1,10 @@
 <template>
     <div class="usercard">
-        <div class="box">
+        <!-- <div class="box"> -->
 
-        </div>
+        <!-- </div> -->
+
+        <img class="box" :src="img">
         <h3>{{ name }}</h3>
         <p>{{ trajectory }}</p>
     </div>
@@ -12,6 +14,7 @@
 defineProps<{
     name: string;
     trajectory: string;
+    img: string;
 }>()
 </script>
 
@@ -40,7 +43,7 @@ h3 {
 .box {
     aspect-ratio: 1/1;
     width: 250px;
-    background-color: red; 
+    background-color: var(--yellow); 
     border-radius: 5px;
 }
 </style>

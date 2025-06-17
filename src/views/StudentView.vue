@@ -30,7 +30,7 @@
             <TextField v-if="selectedFilter === 'name'" v-model="searchQuery" placeholder="Zoeken" />
         </div>
         <TransitionGroup name="list" tag="div" class="usergrid">
-            <UserCard v-for="person in filteredAndSortedStudents" @click="router.push({ path: `/student/${person.id}` })" :key="person.first_name + person.last_name" :name="`${person.first_name} ${person.last_name}`" :trajectory="person.traject" />
+            <UserCard v-for="person in filteredAndSortedStudents" @click="router.push({ path: `/student/${person.id}` })" :key="person.first_name + person.last_name" :name="`${person.first_name} ${person.last_name}`" :trajectory="person.traject" :img="person.img" />
         </TransitionGroup>
     </section>
 </template>
