@@ -26,7 +26,7 @@
                             <td>{{ credit.function }}</td>
                             <td>{{ students[credit.personID].first_name }} {{ students[credit.personID].last_name }}</td>
                             <td style="display: flex; justify-content: center; align-content: center;">
-                                <ButtonInput>Bekijk student</ButtonInput>
+                                <ButtonInput @click="router.push({ path: `/student/${credit.personID}` })">Bekijk student</ButtonInput>
                             </td>
                         </tr>
                     </tbody>
@@ -42,13 +42,15 @@
 
 <script setup lang="ts">
 import { onBeforeMount, ref, watch, computed } from 'vue';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { projects as allProjects, type PortfolioProject } from '@/data/projects'; // Assuming you have a projects data file
 import DetailViewProjectCard from '@/components/DetailViewProjectCard.vue';
 import { students } from '@/data/students';
 import ButtonInput from '@/components/ButtonInput.vue';
 
 const route = useRoute();
+const router = useRouter();
+
 const activeData = ref<PortfolioProject>();
 
 const filteredProjects = computed(() => {
