@@ -37,7 +37,7 @@
 
 <script setup lang="ts">
 import UserCard from '../components/UserCard.vue';
-import { students, type Traject } from '@/data/students';
+import { nonLostStudents as students, type Traject } from '@/data/students';
 import TextField from '@/components/TextField.vue';
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
