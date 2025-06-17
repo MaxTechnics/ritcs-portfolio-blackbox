@@ -23,7 +23,8 @@ const route = useRoute();
 img {
     height: 100%;
     margin-right: auto;
-    padding: 1rem
+    padding: 1rem;
+    opacity: 0;
 }
 .active {
     font-weight: bold !important;
