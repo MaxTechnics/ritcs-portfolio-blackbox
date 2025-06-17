@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&display=swap');
+@import './tablet-gothic/stylesheet.css';
 
 :root {
   --header-yellow: #fff388;
@@ -33,13 +34,20 @@ html {
 }
 
 body {
-  font-family: 'Darker Grotesque', sans-serif;
+  /* font-family: 'Darker Grotesque', sans-serif; */
+  font-family: 'Tablet Gothic', sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
+  font-size: 1rem;
+
   line-height: 1;
   box-sizing: border-box;
   background-color: var(--bg_color);
   color: #fff;
+}
+
+a {
+  color: var(--font_color);
 }
 
 h2 {
@@ -47,5 +55,11 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 2.5rem;
+}
+
+p {
+ font-size: 1.5rem;
+ line-height: 1.5;
 }

@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Tablet Gothic Hv';
+    src: url('TabletGothic-Heavy.eot');
+    src: local('TabletGothic-Heavy'),
+        url('TabletGothic-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-Heavy.woff2') format('woff2'),
+        url('TabletGothic-Heavy.woff') format('woff'),
+        url('TabletGothic-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic';
+    src: url('TabletGothic-Bold.eot');
+    src: local('TabletGothic-Bold'),
+        url('TabletGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-Bold.woff2') format('woff2'),
+        url('TabletGothic-Bold.woff') format('woff'),
+        url('TabletGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic Th';
+    src: url('TabletGothic-Thin.eot');
+    src: local('TabletGothic-Thin'),
+        url('TabletGothic-Thin.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-Thin.woff2') format('woff2'),
+        url('TabletGothic-Thin.woff') format('woff'),
+        url('TabletGothic-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic Th';
+    src: url('TabletGothic-ThinOblique.eot');
+    src: local('TabletGothic-ThinOblique'),
+        url('TabletGothic-ThinOblique.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-ThinOblique.woff2') format('woff2'),
+        url('TabletGothic-ThinOblique.woff') format('woff'),
+        url('TabletGothic-ThinOblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic';
+    src: url('TabletGothic.eot');
+    src: local('TabletGothic'),
+        url('TabletGothic.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic.woff2') format('woff2'),
+        url('TabletGothic.woff') format('woff'),
+        url('TabletGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic Lt';
+    src: url('TabletGothic-LightOblique.eot');
+    src: local('TabletGothic-LightOblique'),
+        url('TabletGothic-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-LightOblique.woff2') format('woff2'),
+        url('TabletGothic-LightOblique.woff') format('woff'),
+        url('TabletGothic-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic Sb';
+    src: url('TabletGothic-SemiBoldOblique.eot');
+    src: local('TabletGothic-SemiBoldOblique'),
+        url('TabletGothic-SemiBoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-SemiBoldOblique.woff2') format('woff2'),
+        url('TabletGothic-SemiBoldOblique.woff') format('woff'),
+        url('TabletGothic-SemiBoldOblique.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic Sb';
+    src: url('TabletGothic-SemiBold.eot');
+    src: local('TabletGothic-SemiBold'),
+        url('TabletGothic-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-SemiBold.woff2') format('woff2'),
+        url('TabletGothic-SemiBold.woff') format('woff'),
+        url('TabletGothic-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic';
+    src: url('TabletGothic-Italic.eot');
+    src: local('TabletGothic-Italic'),
+        url('TabletGothic-Italic.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-Italic.woff2') format('woff2'),
+        url('TabletGothic-Italic.woff') format('woff'),
+        url('TabletGothic-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic Eb';
+    src: url('TabletGothic-ExtraBoldOblique.eot');
+    src: local('TabletGothic-ExtraBoldOblique'),
+        url('TabletGothic-ExtraBoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-ExtraBoldOblique.woff2') format('woff2'),
+        url('TabletGothic-ExtraBoldOblique.woff') format('woff'),
+        url('TabletGothic-ExtraBoldOblique.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic Hv';
+    src: url('TabletGothic-HeavyOblique.eot');
+    src: local('TabletGothic-HeavyOblique'),
+        url('TabletGothic-HeavyOblique.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-HeavyOblique.woff2') format('woff2'),
+        url('TabletGothic-HeavyOblique.woff') format('woff'),
+        url('TabletGothic-HeavyOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic Lt';
+    src: url('TabletGothicLt.eot');
+    src: local('TabletGothicLt'),
+        url('TabletGothicLt.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothicLt.woff2') format('woff2'),
+        url('TabletGothicLt.woff') format('woff'),
+        url('TabletGothicLt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic Eb';
+    src: url('TabletGothicEb.eot');
+    src: local('TabletGothicEb'),
+        url('TabletGothicEb.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothicEb.woff2') format('woff2'),
+        url('TabletGothicEb.woff') format('woff'),
+        url('TabletGothicEb.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tablet Gothic';
+    src: url('TabletGothic-BoldOblique.eot');
+    src: local('TabletGothic-BoldOblique'),
+        url('TabletGothic-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('TabletGothic-BoldOblique.woff2') format('woff2'),
+        url('TabletGothic-BoldOblique.woff') format('woff'),
+        url('TabletGothic-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
