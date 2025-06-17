@@ -128,8 +128,9 @@ section {
 .box {
     aspect-ratio: 1/1;
     width: 300px;
-    box-shadow: 5px 5px 0 #000;
+    box-shadow: 5px 5px 0 var(--shadow_color);
 
-    background-color: orange;
+    background-color: var(--yellow) ;
+    border-radius: 5px;
 }
 </style>
