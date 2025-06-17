@@ -607,25 +607,25 @@ export const projects: PortfolioProject[] = [
             { personID: 'aimyvandenbemden', function: 'Productie' }
         ]
     },
-    {
-        id: 'prakt_3_womb',
-        title: 'the womb',
-        subtitle: 'Praktijk 3',
-        workyear: '2324',
-        description: 'be ready to be born again',
-        // image: PRAKT_3_WOMB,
-        image: '', // FIXME
-        tags: ['Installatie'],
-        personal: false,
-        credits: [
-            { personID: 'alexandramees', function: 'Productie' },
-            { personID: 'sazanloomans', function: 'Productie' },
-            { personID: 'pimvergeest', function: 'Regie' },
-            { personID: 'linavannerum', function: 'Regie' },
-            { personID: 'owenvandoorslaer', function: 'Techniek' },
-            { personID: 'jonaschepens', function: 'Techniek' }
-        ]
-    }
+    // {
+    //     id: 'prakt_3_womb',
+    //     title: 'the womb',
+    //     subtitle: 'Praktijk 3',
+    //     workyear: '2324',
+    //     description: 'be ready to be born again',
+    //     // image: PRAKT_3_WOMB,
+    //     image: '', // FIXME
+    //     tags: ['Installatie'],
+    //     personal: false,
+    //     credits: [
+    //         { personID: 'alexandramees', function: 'Productie' },
+    //         { personID: 'sazanloomans', function: 'Productie' },
+    //         { personID: 'pimvergeest', function: 'Regie' },
+    //         { personID: 'linavannerum', function: 'Regie' },
+    //         { personID: 'owenvandoorslaer', function: 'Techniek' },
+    //         { personID: 'jonaschepens', function: 'Techniek' }
+    //     ]
+    // }
     // Year 3
     // {
     //     id: 'bc_sport'
