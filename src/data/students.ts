@@ -460,13 +460,13 @@ export const students: { [name: string]: PortfolioStudent } = {
 
 
 
-    'samgielen': {
-        id: 'samgielen',
-        first_name: 'Sam',
-        last_name: 'Gielen',
-        traject: 'NoStudent',
-        img: GENERIC
-    }
+    // 'samgielen': {
+    //     id: 'samgielen',
+    //     first_name: 'Sam',
+    //     last_name: 'Gielen',
+    //     traject: 'NoStudent',
+    //     img: GENERIC
+    // }
 };
 
 export const nonLostStudents = Object.values(students).filter(student => student.traject !== 'Lost');
