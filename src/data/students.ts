@@ -402,14 +402,14 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'raoullangermans',
         first_name: 'Raoul',
         last_name: 'Langermans',
-        traject: 'Lost', // TODO verify
+        traject: 'Lost',
         img: GENERIC
     },
     'janamalaeb': {
         id: 'janamalaeb',
         first_name: 'Jana',
         last_name: 'Malaeb',
-        traject: 'Lost', // TODO verify
+        traject: 'Lost',
         img: GENERIC
     }
 };
