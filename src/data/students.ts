@@ -35,7 +35,7 @@ import TUUR from '@/assets/studentimg/tuur.png';
 import GENERIC from '@/assets/studentimg/generic.png';
 import JAMES from '@/assets/studentimg/james.png';
 
-export type Traject = 'AVT' | 'Realisatie' | 'Productie' | 'Lost';
+export type Traject = 'AVT' | 'Realisatie' | 'Productie' | 'Lost' | 'NoStudent';
 
 export interface PortfolioStudent {
     id: string;
@@ -258,6 +258,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'aimyvandenbemden',
         first_name: 'Aimy',
         last_name: 'Vanden Bemden',
+        tagline: 'Social Media Girlboss',
         job_titles: ['Productie', 'Montage', 'Sociale media'],
         traject: 'Productie',
         website: 'https://readymag.website/u1365942860/5616206/',
@@ -455,6 +456,17 @@ export const students: { [name: string]: PortfolioStudent } = {
         traject: 'AVT',
         img: JAMES
     },
+
+
+
+
+    'samgielen': {
+        id: 'samgielen',
+        first_name: 'Sam',
+        last_name: 'Gielen',
+        traject: 'NoStudent',
+        img: GENERIC
+    }
 };
 
 export const nonLostStudents = Object.values(students).filter(student => student.traject !== 'Lost');
@@ -504,5 +516,7 @@ export type StudentId = 'thiebewouters'
     | 'lisekerckx'
     | 'lukasjoosten'
     | 'abdoulienije'
-    | 'raoullangermans';
+    | 'raoullangermans'
+    | 'janamalaeb'
+    | 'jamesdepotter';
 

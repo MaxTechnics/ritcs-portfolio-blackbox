@@ -47,6 +47,8 @@ type PortfolioFunction = 'Camera' |
     'Techniek' |
     'Chef Techniek' |
     'Art Director' |
+    'Animatie' |
+    'Compositing' |
     'Met dank aan';
 type Credit = {
     personID: StudentId;
@@ -630,6 +632,227 @@ export const projects: PortfolioProject[] = [
     // {
     //     id: 'bc_sport'
     // },
+
+    // Year 3
+    {
+        id: 'bc_sport_gymgala',
+        title: 'Gymgala Lotto Arena',
+        subtitle: 'Bachelorclass sport',
+        workyear: '2425',
+        description: 'Voor de bachelorclass Sport hebben we het Gymgala in de Lotto Arena gecapteerd in samenwerking met Sporza en NEP. Zet je schrap voor een wervelende show met onze 5 Olympiërs, Belgische toppers, internationale gymnasten uit verschillende disciplines, en adembenemende special acts!',
+        image: BC_SPORT_GYMGALA,
+        tags: ['Sport', 'Multicam', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Camera' },
+            { personID: 'julescnudde', function: 'Camera' },
+            { personID: 'margauxdecleyre', function: 'Regie' },
+            { personID: 'casderidder', function: 'Grading' },
+            { personID: 'brentdewin', function: 'Camera' },
+            { personID: 'brentdewin', function: 'Mixing' },
+            { personID: 'alexandramees', function: 'Regie Assistent' },
+            { personID: 'ferremeyhi', function: 'Productie' },
+            { personID: 'ferremeyhi', function: 'Camera' },
+            { personID: 'ferremeyhi', function: 'Opnameleiding' },
+            { personID: 'jonaschepens', function: 'Mixing' },
+            { personID: 'wouttemmerman', function: 'Chef Geluid' },
+            { personID: 'khanyisilevanderheide', function: 'Regie' },
+            { personID: 'owenvandoorslaer', function: 'Electro' },
+            { personID: 'owenvandoorslaer', function: 'Camera Assistent' },
+            { personID: 'linavannerum', function: 'Camera' },
+            { personID: 'linavannerum', function: 'Opnameleiding' },
+            { personID: 'stevenvantichelen', function: 'Techniek' },
+            { personID: 'marievermeulen', function: 'Camera' },
+            { personID: 'marievermeulen', function: 'Mixing' },
+            { personID: 'thiebewouters', function: 'Camera' },
+            { personID: 'mozalbak', function: 'Camera' }
+        ]
+    },
+    {
+        id: 'bc_sport_beatrice',
+        title: 'Portret Beatrice Martone',
+        subtitle: 'Bachelorclass sport',
+        workyear: '2425',
+        description: 'Deze video is een portret van Beatrice Martone, een jonge speelster die haar debuut heeft gemaakt in de A-ploeg op 15-jarige leeftijd.',
+        image: BC_SPORT_BEATRICE,
+        tags: ['Sport', 'Portret', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            { personID: 'margauxdecleyre', function: 'Productie' },
+            { personID: 'khanyisilevanderheide', function: 'Regie' },
+            { personID: 'stevenvantichelen', function: 'Camera' }
+        ]
+    },
+
+    // FIXME portret jona ferre jules
+    {
+        id: 'bc_sport_bouba',
+        title: 'Portret Bouba',
+        subtitle: 'Bachelorclass sport',
+        workyear: '2425',
+        description: 'In deze video tonen wij Bouba, een speler die opgegroeid is top de straat pleintjes en van daar zijn weg heeft gevonden naar een profcontract bij RSCA Anderlecht.',
+        image: BC_SPORT_BOUBA,
+        tags: ['Sport', 'Portret', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            { personID: 'casderidder', function: 'Camera' },
+            { personID: 'linavannerum', function: 'Regie' },
+            { personID: 'marievermeulen', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'bc_sport_nilson',
+        title: 'Portret Nilson Angulo',
+        subtitle: 'Bachelorclass sport',
+        workyear: '2425',
+        description: 'In deze korte video zien we Nilson Angulo, een speler van de eerste divisie club te RSC Anderlecht. Afkomstig van Ecuador zien we hoe zijn verandering in hier te Brussel een grote impact heeft.',
+        image: BC_SPORT_NILSON,
+        tags: ['Sport', 'Portret', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            { personID: 'brentdewin', function: 'Camera' },
+            { personID: 'alexandramees', function: 'Productie' },
+            { personID: 'thiebewouters', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'bc_hybride_beyond',
+        title: 'Beyond After',
+        subtitle: 'Bachelorclass hybride',
+        workyear: '2425',
+        description: 'Beyond After is een solo choreografie door Bente Bulens die wij mochten verfilmen onder begeleiding van Charlotte de Cort. De dans is Bente haar aankomst in het hiernamaals. Binnen onze film zijn we dieper in gegaan op de momenten van reflectie en vervreemding (de buiten locaties) in tegenstelling tot het hiernamaals (studio).',
+        image: BC_HYBRIDE_BEYOND,
+        tags: ['Hybride', 'Dans', 'Experimenteel', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            // stijn anthonissen = docent
+            // charlotte de cort == docent
+            { personID: 'nansialkhateeb', function: 'Coach' },
+            { personID: 'warddeleersnyder', function: 'Camera' },
+            { personID: 'warddeleersnyder', function: 'DOP' },
+            { personID: 'mirademulder', function: 'Art Director' },
+            { personID: 'brentdewin', function: 'Camera' },
+            { personID: 'brentdewin', function: 'DOP' },
+            { personID: 'brentdewin', function: 'Montage' },
+            { personID: 'sazanloomans', function: 'Regie Assistent' },
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'kianikhatrichetri', function: 'Art Director' },
+            { personID: 'ferremeyhi', function: 'Geluid' },
+            { personID: 'jonaschepens', function: 'Licht' },
+            { personID: 'pimvergeest', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'bc_hybride_makkelijk',
+        title: 'Monokimono - Makkelijk Makkelijk',
+        subtitle: 'Bachelorclass hybride',
+        workyear: '2425',
+        description: 'Het muzieknummer gaat over zelfliefde en het besef dat de mening van anderen er niet toe doet. In de video zien we monokimono (Ben & Ella) in een \'plastic wereld\'. Net zoals in de songtekst, waar ze zingen over hoe onzekerheid voelt, moeten ze moeite doen om die veilige en zelfverzekerdheid - de plastic wereld - te creëren en te ervaren. Uiteindelijk slagen ze daarin: ze performen, dansen en zijn volledig zichzelf, vrij en onbevangen.',
+        image: BC_HYBRIDE_MAKKELIJK,
+        tags: ['Hybride', 'Muziek', 'Videoclip', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Licht' },
+            // { personID: 'stijnanthonissen', function: 'Met dank aan' },
+            { personID: 'julescnudde', function: 'Licht' },
+            { personID: 'maximcoppieters', function: 'Grading' },
+            { personID: 'maximcoppieters', function: 'Techniek' },
+            { personID: 'maximcoppieters', function: 'DIT' },
+            { personID: 'casderidder', function: 'Montage' },
+            { personID: 'casderidder', function: 'DOP' },
+            { personID: 'alexandramees', function: 'Regie' },
+            // { personID: 'ellasalvador', function: 'Acteur' },
+            // { personID: 'bentanghe', function: 'Rechthebbende' },
+            // { personID: 'bentanghe', function: 'Acteur' },
+            { personID: 'wouttemmerman', function: 'Techniek' },
+            // { personID: 'wannesvandendriessche', function: 'Met dank aan' },
+            { personID: 'driesvandormael', function: 'Techniek' },
+            { personID: 'driesvandormael', function: 'Grafisch Design' },
+            // { personID: 'victorvercammen', function: 'Met dank aan' },
+            { personID: 'marievermeulen', function: 'Art Director' },
+            { personID: 'marievermeulen', function: 'Productie' }
+        ]
+    },
+    {
+        id: 'bc_hybride_livingroom',
+        title: 'Living Room',
+        subtitle: 'Bachelorclass hybride',
+        workyear: '2425',
+        description: 'De camera vertelt het verhaal en ontdekt de ruimte waar we in zijn. Doordat de camera de ruimte gaat ontdekken merkt het dat het dingen kan zien die er in eerste instantie niet lijken te zijn: ontdekt het een Bachelorclass / andere dimensie?',
+        image: BC_HYBRIDE_LIVINGROOM,
+        tags: ['Hybride', 'Kortfilm', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            { personID: 'margauxdecleyre', function: 'Geluid' },
+            { personID: 'aimyvandenbemden', function: 'Montage' },
+            { personID: 'martvandenheuvel', function: 'Productie' },
+            { personID: 'tuurvangrimde', function: 'Camera' },
+            { personID: 'linavannerum', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'bc_reality_hart_op_zoek',
+        title: 'Hart Op Zoek',
+        subtitle: 'Bachelorclass reality',
+        workyear: '2425',
+        description: 'Veda en Ilja gaan op blind date op de plaats waar ze echt zichzelf zijn. ze leren elkaar beter kennen doormiddel van elkaars hobbies uit te oefenen.',
+        image: BC_REALITY_HART_OP_ZOEK,
+        tags: ['Reality', 'Dating', 'Hobby’s', 'Drama', 'Hybride'],
+        personal: false,
+        credits: [
+            { personID: 'nansialkhateeb', function: 'Redactie' },
+            { personID: 'mirademulder', function: 'Geluid' },
+            { personID: 'jamesdepotter', function: 'Camera' },
+            { personID: 'jamesdepotter', function: 'Geluid' },
+            // { personID: 'nickjordens', function: 'Acteur' },
+            { personID: 'aimyvandenbemden', function: 'Productie' },
+            { personID: 'khanyisilevanderheide', function: 'Productie' },
+            { personID: 'tuurvangrimde', function: 'Grading' },
+            { personID: 'tuurvangrimde', function: 'Camera' },
+            { personID: 'tuurvangrimde', function: 'Regie' },
+            { personID: 'thanitsornverschueren', function: 'Camera Assistent' },
+            { personID: 'lukasvleugels', function: 'Regie' },
+            { personID: 'thiebewouters', function: 'Montage' },
+            { personID: 'thiebewouters', function: 'Camera' }
+        ]
+    },
+    {
+        id: 'winterschool_postitmuur',
+        title: 'Post it muur',
+        subtitle: 'Winterschool 2025',
+        workyear: '2425',
+        description: 'Een experimentele video voor de showcase van de workshop van Julia Clever voor Winterschool 2025',
+        image: WINTERSCHOOL_POSTITMUUR,
+        tags: ['Winterschool', 'Post Its'],
+        personal: false,
+        credits: [
+            { personID: 'brentcauberghs', function: 'Regie' },
+            { personID: 'stevenvantichelen', function: 'Geluid' },
+            { personID: 'stevenvantichelen', function: 'Camera' }
+        ]
+    },
+    {
+        id: 'bc_brdcstlb_kain',
+        title: 'Kaïn',
+        subtitle: 'Bachelorclass BRDCSTLB',
+        workyear: '2425',
+        description: 'Een kortfilm waarbij een fictieve jonge tiener Kaïn verzeilt raakt in een spel dat ze aan het spelen is. Het werk werd gemaakt met het oog op het opbouwen van nieuwe individuele skills tijdens de 3 weken durende Bachelorclass "BRDCSTLB". Een stevige introductie in Unreel Engine 5 en doorlopende begeleiding gedurende deze periode, gegeven door de ervaren UE-artist Sam Gielen, lag aan de basis van de productie van deze uitvoering. Veel dank hiervoor Sam!',
+        image: BC_BRDCSTLB_KAIN,
+        tags: ['Unreal Engine', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            { personID: 'femkebeeckman', function: 'Animatie' },
+            { personID: 'femkebeeckman', function: 'Compositing' },
+            { personID: 'maximcoppieters', function: 'Compositing' },
+            { personID: 'maximcoppieters', function: 'Animatie' },
+            { personID: 'jamesdepotter', function: 'Animatie' },
+            { personID: 'jamesdepotter', function: 'Compositing' },
+            // { personID: 'samgielen', function: 'Met dank aan' },
+            { personID: 'kianikhatrichetri', function: 'Regie' },
+            { personID: 'driesvandormael', function: 'Compositing' },
+            { personID: 'driesvandormael', function: 'Animatie' }
+        ]
+    }
 
 
 
