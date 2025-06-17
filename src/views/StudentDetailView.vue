@@ -1,12 +1,13 @@
 <template>
     <section v-if="activeData && activeData.traject !== 'Lost'">
         <div class="hero">
-            <div class="box"></div>
+            <img :src="activeData.img" class="box">
             <span>
                 <h1>{{ activeData.first_name }} {{ activeData.last_name }}</h1>
                 <p v-if="activeData.tagline">{{ activeData.tagline }}</p>
                 <br>
-                <p>Functies: Chef Techniek, All-rounder</p>
+                <p v-if="activeData.job_titles">{{ activeData.job_titles.join(' • ') }}</p>
+                <br>
                 <p v-if="activeData.website">Website: {{ activeData.website }}</p>
             </span>
             <img v-if="activeData.website" :src="qr" class="qr" style="margin-left: auto;">
