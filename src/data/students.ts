@@ -33,6 +33,7 @@ import FERRE from '@/assets/studentimg/ferre.png';
 import TUUR from '@/assets/studentimg/tuur.png';
 // import JONA from '@/assets/studentimg/jona.png';
 import GENERIC from '@/assets/studentimg/generic.png';
+import JAMES from '@/assets/studentimg/james.png';
 
 export type Traject = 'AVT' | 'Realisatie' | 'Productie' | 'Lost';
 
@@ -41,6 +42,7 @@ export interface PortfolioStudent {
     first_name: string;
     last_name: string;
     tagline?: string;
+    job_titles?: string[];
     traject: Traject;
     website?: string;
     img: string;
@@ -51,6 +53,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'thiebewouters',
         first_name: 'Thiebe',
         last_name: 'Wouters',
+        job_titles: ['Regie', 'Camera', 'Montage'],
         traject: 'Realisatie',
         website: 'https://thiebewouters.myportfolio.com/',
         img: THIEBE
@@ -59,6 +62,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'thanitsornverschueren',
         first_name: 'Thanit',
         last_name: 'Verschueren',
+        job_titles: ['Dataset', 'Techniek'],
         traject: 'AVT',
         website: 'https://thanitsornversch.myportfolio.com/',
         img: THANIT
@@ -67,6 +71,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'stevenvantichelen',
         first_name: 'Steven',
         last_name: 'Van Tichelen',
+        job_titles: ['Klank', 'Chef Techniek'],
         traject: 'AVT',
         website: 'https://stevenvantichelen.my.canva.site/',
         img: STEVEN
@@ -75,6 +80,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'sazanloomans',
         first_name: 'Sazan',
         last_name: 'Loomans',
+        job_titles: ['Productie', 'Regie assistent'],
         traject: 'Productie',
         website: 'https://sazanloomans.my.canva.site/',
         img: SAZAN
@@ -83,6 +89,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'robincooremans',
         first_name: 'Robin',
         last_name: 'Cooremans',
+        job_titles: ['Klank', 'RF'],
         traject: 'AVT',
         website: 'https://robincooremans.myportfolio.com/work',
         img: ROBIN
@@ -91,14 +98,16 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'pimvergeest',
         first_name: 'Pim',
         last_name: 'Vergeest',
+        job_titles: ['Regie'],
         traject: 'Realisatie',
         website: 'https://www.pimvergeest.nl/',
         img: PIM
     },
     'mozalbak': {
         id: 'mozalbak',
-        first_name: 'Mo',
+        first_name: 'Mohammad',
         last_name: 'Zalbak',
+        job_titles: ['Regie', 'Schrijven'],
         traject: 'Realisatie',
         website: 'https://mohammadzalbak.my.canva.site/',
         img: MO
@@ -115,6 +124,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'mirademulder',
         first_name: 'Mira',
         last_name: 'De Mulder',
+        job_titles: ['Redactie', 'Rekwisieten', 'Klank'],
         traject: 'Realisatie',
         website: 'https://mirademulder.myportfolio.com/work',
         img: MIRA
@@ -123,6 +133,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'margauxdecleyre',
         first_name: 'Margaux',
         last_name: 'Decleyre',
+        job_titles: ['Regie', 'Art direction', 'Multicam', 'Muziek'],
         traject: 'Realisatie',
         website: 'https://margauxsmontage.my.canva.site/portfolio',
         img: MARGAUX
@@ -131,6 +142,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'martvandenheuvel',
         first_name: 'Mart',
         last_name: 'Van Den Heuvel',
+        job_titles: ['Regie', 'Show Runner'],
         traject: 'Realisatie',
         website: 'http://cine-mart.com/',
         img: MART
@@ -139,6 +151,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'marievermeulen',
         first_name: 'Marie',
         last_name: 'Vermeulen',
+        job_titles: ['Regie', 'Camera', 'montage'],
         traject: 'Realisatie',
         website: 'https://marievermeulen.my.canva.site/',
         img: MARIE
@@ -147,6 +160,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'maartenaerssens',
         first_name: 'Maarten',
         last_name: 'Aerssens',
+        job_titles: ['Camera', 'Grip', 'Drone', 'Licht'],
         traject: 'AVT',
         website: 'https://maartenaerssens.be/',
         img: MAARTEN
@@ -155,6 +169,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'linavannerum',
         first_name: 'Lina',
         last_name: 'Vannerum',
+        job_titles: ['Regie', 'Art direction', 'Brand identity (artists)'],
         traject: 'Realisatie',
         website: 'https://linavannerum18.wixsite.com/vannlina',
         img: LINA
@@ -163,6 +178,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'kianikhatrichetri',
         first_name: 'Kiani',
         last_name: 'Khatri Chetri',
+        job_titles: ['Production design', 'Art direction', 'Set dressing', 'Scrijven'],
         traject: 'Realisatie',
         website: 'https://kikhache.my.canva.site/',
         img: KIANI
@@ -171,6 +187,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'julescnudde',
         first_name: 'Jules',
         last_name: 'Cnudde',
+        job_titles: ['Regie', 'Camera', 'Art direction', 'Montage'],
         traject: 'Realisatie',
         website: 'https://www.julescnudde.com/',
         img: JULES
@@ -179,6 +196,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'lukasvleugels',
         first_name: 'Lukas',
         last_name: 'Vleugels',
+        job_titles: ['Regie', 'Art direction'],
         traject: 'Realisatie',
         website: 'https://lukas-vleugels.my.canva.site/',
         img: LUKAS
@@ -187,6 +205,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'khanyisilevanderheide',
         first_name: 'Khanyisile',
         last_name: 'Van Der Heide',
+        job_titles: ['Regie', 'Art direction'],
         traject: 'Realisatie',
         website: 'https://khanyisilevanderheide.my.canva.site/khanyisile-van-der-heide',
         img: KHANYISILE
@@ -195,6 +214,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'femkebeeckman',
         first_name: 'Femke',
         last_name: 'Beeckman',
+        job_titles: ['Color grading', 'Camera', 'Montage', 'Shading'],
         traject: 'AVT',
         website: 'https://femkebeeckman.be/',
         img: FEMKE
@@ -211,6 +231,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'casderidder',
         first_name: 'Cas',
         last_name: 'De Ridder',
+        job_titles: ['Camera', 'Montage'],
         traject: 'AVT',
         website: 'https://casderidder.myportfolio.com/work',
         img: CAS
@@ -219,6 +240,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'brentdewin',
         first_name: 'Brent',
         last_name: 'De Win',
+        job_titles: ['Camera', 'Montage'],
         traject: 'AVT',
         website: 'https://brentdewin.my.canva.site/',
         img: BRENTDW
@@ -227,6 +249,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'alexandramees',
         first_name: 'Alexandra',
         last_name: 'Mees',
+        job_titles: ['Productie', 'Regie-assistent'],
         traject: 'Productie',
         website: 'https://alexandramees1dcc.myportfolio.com/home',
         img: ALEXANDRA
@@ -235,6 +258,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'aimyvandenbemden',
         first_name: 'Aimy',
         last_name: 'Vanden Bemden',
+        job_titles: ['Productie', 'Montage', 'Sociale media'],
         traject: 'Productie',
         website: 'https://readymag.website/u1365942860/5616206/',
         img: AIMY
@@ -243,6 +267,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'warddeleersnyder',
         first_name: 'Ward',
         last_name: 'Deleersnyder',
+        job_titles: ['Camera', 'Cinematograaf'],
         traject: 'AVT',
         website: 'https://warddeleersnyder.com',
         img: WARD
@@ -251,6 +276,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'lukakeunen',
         first_name: 'Luka',
         last_name: 'Keunen',
+        job_titles: ['Creative producer', 'Commercial'],
         traject: 'Realisatie',
         website: 'https://lukanie.my.canva.site/active-in',
         img: LUKA
@@ -259,6 +285,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'driesvandormael',
         first_name: 'Dries',
         last_name: 'Vandormael',
+        job_titles: ['Video & lighting programmer (live event)', 'Broadcast engineer'],
         traject: 'AVT',
         website: 'https://driesvandormael.my.canva.site/',
         img: DRIES
@@ -267,6 +294,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'wouttemmerman',
         first_name: 'Wout',
         last_name: 'Temmerman',
+        job_titles: ['Audio Engineer', 'Music Producer', 'Mixer (post productie, broadcast)'],
         traject: 'AVT',
         website: 'https://temmermanwout.my.canva.site/temmerman-wout',
         img: WOUT
@@ -275,6 +303,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'brentcauberghs',
         first_name: 'Brent',
         last_name: 'Cauberghs',
+        job_titles: ['Camera', 'Montage', 'Regie', 'Fictie'],
         traject: 'Realisatie',
         website: 'https://brentcauberghs.my.canva.site/',
         img: BRENTC
@@ -283,6 +312,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'nansialkhateeb',
         first_name: 'Nansi',
         last_name: 'Alkhateeb',
+        job_titles: ['Art direction', 'Regie', 'Muziekproductie'],
         traject: 'Realisatie',
         website: 'https://alkhateebnancy.my.canva.site/',
         img: GENERIC
@@ -291,6 +321,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'opheliadelhaye',
         first_name: 'Ophelia',
         last_name: 'Delhaye',
+        job_titles: ['Art direction', 'Regie', 'Muziekproductie'],
         traject: 'Realisatie',
         website: 'https://opheliadelhaye.wixsite.com/my-site-1',
         img: OPHELIA
@@ -299,6 +330,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'ferremeyhi',
         first_name: 'Ferre',
         last_name: 'Meyhi',
+        job_titles: ['Productie', 'Regie assistent'],
         traject: 'Productie',
         website: 'https://ferremeyhi.my.canva.site/portfolio2025',
         img: FERRE
@@ -307,6 +339,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'tuurvangrimde',
         first_name: 'Tuur',
         last_name: 'Vangrimde',
+        job_titles: ['Regie', 'Camera', 'Montage'],
         traject: 'Realisatie',
         website: 'https://tuurvangrimde.my.canva.site/',
         img: TUUR
@@ -315,6 +348,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'jonaschepens',
         first_name: 'Jona',
         last_name: 'Schepens',
+        job_titles: ['Licht scenografie'],
         traject: 'AVT',
         website: 'https://jona-schepens.webnode.be/portfolio/',
         img: GENERIC
@@ -323,6 +357,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         id: 'maximcoppieters',
         first_name: 'Maxim',
         last_name: 'Coppieters',
+        job_titles: ['Chef techniek (broadcast)', 'all-round techniek'],
         tagline: 'Professional nerd :)',
         traject: 'AVT',
         website: 'https://maxim.infonet.media',
@@ -411,7 +446,15 @@ export const students: { [name: string]: PortfolioStudent } = {
         last_name: 'Malaeb',
         traject: 'Lost',
         img: GENERIC
-    }
+    },
+    'jamesdepotter': {
+        id: 'jamesdepotter',
+        first_name: 'James',
+        last_name: 'Depotter',
+        job_titles: ['Lichtontwerp', 'Licht programmer'],
+        traject: 'AVT',
+        img: JAMES
+    },
 };
 
 export const nonLostStudents = Object.values(students).filter(student => student.traject !== 'Lost');
