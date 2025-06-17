@@ -15,11 +15,39 @@ import PRAKT_1_MATISSE from '@/assets/projectimg/prakt_1_matisse.jpg';
 import PRAKT_1_RESET from '@/assets/projectimg/prakt_1_reset.jpg';
 import PRAKT_1_CRESENDO from '@/assets/projectimg/prakt_1_cresendo.jpg';
 import PRAKT_1_JAZZ from '@/assets/projectimg/prakt_1_jazz.jpg';
+import PRAKT_2_CHRISTIANCLUB from '@/assets/projectimg/prakt_2_cristianclub.jpg';
+import PRAKT_2_CIGGY from '@/assets/projectimg/prakt_2_ciggy.jpg';
+import PRAKT_2_NOHANDS from '@/assets/projectimg/prakt_2_nohands.jpg';
+import PRAKT_2_GUMMY from '@/assets/projectimg/prakt_2_gummy.jpg';
+import PRAKT_3_RUSH from '@/assets/projectimg/prakt_3_rush.jpg';
+import PRAKT_3_DANSAERT from '@/assets/projectimg/prakt_3_dansaert.jpg';
+import PRAKT_3_DYSTOPIA from '@/assets/projectimg/prakt_3_dystopia.jpg';
+import PRAKT_3_ADAM from '@/assets/projectimg/prakt_3_adam.jpg';
+
+
 
 import { students, type StudentId } from "./students";
 
 type PortfolioTag = 'AVT' | 'Productie' | 'Realisatie';
-type PortfolioFunction = 'Camera' | 'DOP' | 'Montage' | 'Regie' | 'Regie Assistent' | 'Geluid' | 'Chef Geluid' | 'Mixing' | 'Licht' | 'Productie' | 'Catering' | 'Acteur' | 'Grafisch Design' | 'Grading' | 'Techniek' | 'Chef Techniek' | 'Met dank aan';
+type PortfolioFunction = 'Camera' |
+    'DOP' |
+    'Camera Assistent' |
+    'Montage' |
+    'Regie' |
+    'Regie Assistent' |
+    'Geluid' |
+    'Chef Geluid' |
+    'Mixing' |
+    'Licht' |
+    'Productie' |
+    'Catering' |
+    'Acteur' |
+    'Grafisch Design' |
+    'Grading' |
+    'Techniek' |
+    'Chef Techniek' |
+    'Art Director' |
+    'Met dank aan';
 type Credit = {
     personID: StudentId;
     function: PortfolioFunction;
@@ -384,8 +412,224 @@ export const projects: PortfolioProject[] = [
             { personID: 'alexandramees', function: 'Productie' },
             { personID: 'lisekerckx', function: 'Productie' }
         ]
+    },
+    {
+        id: 'prakt_2_cristianclub',
+        title: 'Explode',
+        subtitle: 'Praktijk 2, The Christian Club',
+        workyear: '2324',
+        description: 'Een videoclip over Luca, die probeert doorgaans het verhaal te ontsnappen aan de klauwen van zijn slapenloosheid. Hij zit vol met donkere gedachten en herinneringen wat hem tegenhoudt om van een rustige nachtrust te genieten.',
+        image: PRAKT_2_CHRISTIANCLUB,
+        tags: ['Videoclip'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Montage' },
+            { personID: 'maartenaerssens', function: 'DOP' },
+            { personID: 'nansialkhateeb', function: 'Art Director' },
+            { personID: 'brentcauberghs', function: 'Regie' },
+            // {personID: 'dallaechin', function: 'Kleedster'},
+            { personID: 'mirademulder', function: 'Regie' },
+            { personID: 'lisekerckx', function: 'Productie' },
+            { personID: 'nemosauzeat', function: 'Techniek' },
+            { personID: 'wouttemmerman', function: 'Licht' },
+            { personID: 'aimyvandenbemden', function: 'Regie Assistent' },
+            { personID: 'amelieschreurs', function: 'Script' },
+            { personID: 'tuurvangrimde', function: 'Grading' },
+            { personID: 'tuurvangrimde', function: 'Art Director' },
+            { personID: 'thanitsornverschueren', function: 'Camera Assistent' }
+        ]
+    },
+    {
+        id: 'prakt_2_ciggy',
+        title: 'Sunny Day - Ciggy Sunday',
+        subtitle: 'Praktijk 2, Ciggy Sunday',
+        workyear: '2324',
+        description: 'Wij hebben een videoclip gemaakt over een Hugo. Hij beleeft elke dag opnieuw en ontdekt uiteindelijk dat hij een vis is.',
+        image: PRAKT_2_CIGGY,
+        tags: ['Videoclip'],
+        personal: false,
+        credits: [
+            { personID: 'femkebeeckman', function: 'Grading' },
+            { personID: 'margauxdecleyre', function: 'Art Director' },
+            { personID: 'brentdewin', function: 'Montage' },
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'alexandramees', function: 'Regie Assistent' },
+            { personID: 'ferremeyhi', function: 'Script' },
+            { personID: 'stevenvantichelen', function: 'DOP' },
+            { personID: 'pimvergeest', function: 'Regie' },
+            { personID: 'lukasvleugels', function: 'Art Director' }
+        ]
+    },
+    {
+        id: 'prakt_2_nohands',
+        title: 'No Hands',
+        subtitle: 'Praktijk 2, Steve',
+        workyear: '2324',
+        description: 'Muziekvideoclip van BOLD voor het nummer \'NO HANDS\' van opkomende band STEVE. Een gestoorde man leeft samen in een kraakpand met twee figuren uit zijn verleden, die slechts een illusie van zijn schizofrenie zijn. Deze figuren willen hem de diepte in sleuren in plaats van hem een hand te helpen.',
+        image: PRAKT_2_NOHANDS,
+        tags: ['Videoclip'],
+        personal: false,
+        credits: [
+            { personID: 'julescnudde', function: 'Acteur' },
+            { personID: 'julescnudde', function: 'Grading' },
+            { personID: 'julescnudde', function: 'Regie' },
+            { personID: 'robincooremans', function: 'Licht' },
+            { personID: 'maximcoppieters', function: 'DIT' },
+            { personID: 'maximcoppieters', function: 'Techniek' },
+            { personID: 'opheliadelhaye', function: 'Art Director' },
+            { personID: 'casderidder', function: 'Camera Assistent' },
+            { personID: 'sazanloomans', function: 'Regie Assistent' },
+            { personID: 'lisekerckx', function: 'Script' },
+            { personID: 'kianikhatrichetri', function: 'Art Director' },
+            { personID: 'kianikhatrichetri', function: 'Makeup' },
+            { personID: 'alexandramees', function: 'Productie' },
+            { personID: 'owenvandoorslaer', function: 'DOP' },
+            { personID: 'owenvandoorslaer', function: 'Montage' },
+            { personID: 'thiebewouters', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'prakt_2_gummy',
+        title: 'Blissful',
+        subtitle: 'Praktijk 2, Gummy Green',
+        workyear: '2324',
+        description: 'Videoclip voor Blissful van Gummy Green',
+        image: PRAKT_2_GUMMY,
+        tags: ['Videoclip'],
+        personal: false,
+        credits: [
+            { personID: 'linavannerum', function: 'Regie' },
+            { personID: 'ferremeyhi', function: 'Regie Assistent' },
+            { personID: 'amelieschreurs', function: 'Productie' },
+            { personID: 'khanyisilevanderheide', function: 'Art Director' },
+            { personID: 'martvandenheuvel', function: 'Decor' },
+            { personID: 'lukakeunen', function: 'Styling' },
+            { personID: 'aimyvandenbemden', function: 'Script' },
+            { personID: 'jonaschepens', function: 'Licht' },
+            { personID: 'driesvandormael', function: 'Camera Assistent' },
+            { personID: 'warddeleersnyder', function: 'Camera' }
+        ]
+    },
+    {
+        id: 'prakt_3_rush',
+        title: 'Rush',
+        subtitle: 'Praktijk 3',
+        workyear: '2324',
+        description: 'Een interactieve, experimentele installatie waar we met licht, geluid en projectie om de kijker/fietser bewuster lieten maken van het verkeer',
+        image: PRAKT_3_RUSH,
+        tags: ['Installatie'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Licht' },
+            { personID: 'femkebeeckman', function: 'Chef Techniek' },
+            { personID: 'julescnudde', function: 'Regie' },
+            { personID: 'brentdewin', function: 'Chef Techniek' },
+            { personID: 'amelieschreurs', function: 'Productie' },
+            { personID: 'wouttemmerman', function: 'Geluid' },
+            { personID: 'tuurvangrimde', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'prakt_3_dansaert',
+        title: 'DANSAeRT',
+        subtitle: 'Praktijk 3',
+        workyear: '2324',
+        description: '',// TODO
+        image: PRAKT_3_DANSAERT,
+        tags: ['Installatie'],
+        personal: false,
+        credits: [
+            { personID: 'nansialkhateeb', function: 'Art Director' },
+            { personID: 'lisekerckx', function: 'Productie' },
+            { personID: 'janamalaeb', function: 'Licht' },
+            { personID: 'ferremeyhi', function: 'Productie' },
+            { personID: 'driesvandormael', function: 'Techniek' },
+            { personID: 'marievermeulen', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'prakt_3_adam',
+        title: 'This is Adam',
+        subtitle: 'Praktijk 3',
+        workyear: '2324',
+        description: '', // TODO
+        image: PRAKT_3_ADAM,
+        tags: ['Installatie'],
+        personal: false,
+        credits: [
+            { personID: 'martvandenheuvel', function: 'Regie' },
+            { personID: 'brentcauberghs', function: 'Montage' }
+        ]
+    },
+    {
+        id: 'prakt_3_dystopia',
+        title: 'Dystopia',
+        subtitle: 'Praktijk 3',
+        workyear: '2324',
+        description: 'Een audio- en VR installatie die het leven van een vrouw in de straten van Brussel demonstreert',
+        image: PRAKT_3_DYSTOPIA,
+        tags: ['Installatie'],
+        personal: false,
+        credits: [
+            { personID: 'maximcoppieters', function: 'Techniek' },
+            { personID: 'maximcoppieters', function: 'Ontwikkelaar' },
+            { personID: 'kianikhatrichetri', function: 'Ontwikkelaar' },
+            { personID: 'opheliadelhaye', function: 'Art Director' },
+            { personID: 'kianikhatrichetri', function: 'Camera' },
+            { personID: 'kianikhatrichetri', function: 'Montage' },
+            { personID: 'khanyisilevanderheide', function: 'Productie' },
+            { personID: 'khanyisilevanderheide', function: 'Script' },
+            { personID: 'stevenvantichelen', function: 'Acteur' },
+            { personID: 'stevenvantichelen', function: 'Geluid' },
+            { personID: 'stevenvantichelen', function: 'Mixage' },
+            { personID: 'thanitsornverschueren', function: 'Acteur' },
+            { personID: 'thanitsornverschueren', function: 'Productie' }
+        ]
+    },
+    {
+        id: 'prakt_3_connect',
+        title: 'Connect',
+        subtitle: 'Praktijk 3',
+        workyear: '2324',
+        description: '', // TODO
+        // image: PRAKT_3_CONNECT, // FIXME
+        image: '',
+        tags: ['Installatie'],
+        personal: false,
+        credits: [
+            { personID: 'margauxdecleyre', function: 'Regie Assistent' },
+            { personID: 'warddeleersnyder', function: 'Promotor' },
+            { personID: 'mirademulder', function: 'Regie Assistent' },
+            { personID: 'casderidder', function: 'DOP' },
+            { personID: 'casderidder', function: 'Geluid' },
+            { personID: 'lukasvleugels', function: 'Regie Assistent' },
+            { personID: 'thiebewouters', function: 'Techniek' },
+            { personID: 'aimyvandenbemden', function: 'Productie' }
+        ]
+    },
+    {
+        id: 'prakt_3_womb',
+        title: 'the womb',
+        subtitle: 'Praktijk 3',
+        workyear: '2324',
+        description: 'be ready to be born again',
+        // image: PRAKT_3_WOMB,
+        image: '', // FIXME
+        tags: ['Installatie'],
+        personal: false,
+        credits: [
+            { personID: 'alexandramees', function: 'Productie' },
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'pimvergeest', function: 'Regie' },
+            { personID: 'linavannerum', function: 'Regie' },
+            { personID: 'owenvandoorslaer', function: 'Techniek' },
+            { personID: 'jonaschepens', function: 'Techniek' }
+        ]
     }
-
+    // Year 3
+    // {
+    //     id: 'bc_sport'
+    // },
 
 
 
