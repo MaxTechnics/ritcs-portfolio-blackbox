@@ -74,7 +74,7 @@ const filteredProjects = computed(() => {
 
 :focus {
     outline: 0;
-	border-color: #2260ff;
+	border-color: var(--accent_red);
 	box-shadow: 0 0 0 4px #b5c9fc;
 }
 
@@ -101,10 +101,12 @@ input[type="radio"] {
 	white-space: nowrap;
 	width: 1px;
 	&:checked + span {
-		box-shadow: 0 0 0 0.0625em #0043ed;
-		background-color: #dee7ff;
+		// box-shadow: 0 0 0 0.0625em #0043ed;
+		box-shadow: 0 0 0 0.0625em var(--accent_red);
+		// background-color: #dee7ff;
+		background-color: var(--bg_color);
 		z-index: 1;
-		color: #0043ed;
+		color: var(--accent_red);
 	}
 }
 
@@ -112,7 +114,7 @@ label {
 	span {
 		display: block;
 		cursor: pointer;
-		background-color: #fff;
+		// background-color: #fff;
 		padding: 0.375em .75em;
 		position: relative;
 		margin-left: .0625em;
