@@ -1,3 +1,39 @@
+import THIEBE from '@/assets/studentimg/thiebe.png';
+import THANIT from '@/assets/studentimg/thanit.png';
+import STEVEN from '@/assets/studentimg/steven.png';
+import SAZAN from '@/assets/studentimg/sazan.png';
+import ROBIN from '@/assets/studentimg/robin.png';
+import PIM from '@/assets/studentimg/pim.png';
+import MO from '@/assets/studentimg/mo.png';
+import OWEN from '@/assets/studentimg/owen.png';
+import MIRA from '@/assets/studentimg/mira.png';
+import MARGAUX from '@/assets/studentimg/margaux.png';
+import MART from '@/assets/studentimg/mart.png';
+import MARIE from '@/assets/studentimg/marie.png';
+import MAARTEN from '@/assets/studentimg/maarten.png';
+import LINA from '@/assets/studentimg/lina.png';
+import KIANI from '@/assets/studentimg/kiani.png';
+import JULES from '@/assets/studentimg/jules.png';
+import LUKAS from '@/assets/studentimg/lukas.png';
+import KHANYISILE from '@/assets/studentimg/khanyisile.png';
+import FEMKE from '@/assets/studentimg/femke.png';
+// import DALLAE from '@/assets/studentimg/dallae.png';
+import CAS from '@/assets/studentimg/cas.png';
+import BRENTDW from '@/assets/studentimg/brentdw.png';
+import ALEXANDRA from '@/assets/studentimg/alexandra.png';
+import AIMY from '@/assets/studentimg/aimy.png';
+import WARD from '@/assets/studentimg/ward.png';
+import LUKA from '@/assets/studentimg/luka.png';
+import DRIES from '@/assets/studentimg/dries.png';
+import WOUT from '@/assets/studentimg/wout.png';
+import BRENTC from '@/assets/studentimg/brentc.png';
+// import NANSI from '@/assets/studentimg/nansi.png';
+import OPHELIA from '@/assets/studentimg/ophelia.png';
+import FERRE from '@/assets/studentimg/ferre.png';
+import TUUR from '@/assets/studentimg/tuur.png';
+// import JONA from '@/assets/studentimg/jona.png';
+import MAXIM from '@/assets/studentimg/maxim.png';
+
 export type Traject = 'AVT' | 'Realisatie' | 'Productie' | 'Lost';
 
 export interface PortfolioStudent {
@@ -7,6 +43,7 @@ export interface PortfolioStudent {
     tagline?: string;
     traject: Traject;
     website?: string;
+    img: string;
 }
 
 export const students: { [name: string]: PortfolioStudent } = {
@@ -15,131 +52,150 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Thiebe',
         last_name: 'Wouters',
         traject: 'Realisatie',
-        website: 'https://thiebewouters.myportfolio.com/'
+        website: 'https://thiebewouters.myportfolio.com/',
+        img: THIEBE
     },
     'thanitsornverschueren': {
         id: 'thanitsornverschueren',
         first_name: 'Thanit',
         last_name: 'Verschueren',
         traject: 'AVT',
-        website: 'https://thanitsornversch.myportfolio.com/'
+        website: 'https://thanitsornversch.myportfolio.com/',
+        img: THANIT
     },
     'stevenvantichelen': {
         id: 'stevenvantichelen',
         first_name: 'Steven',
         last_name: 'Van Tichelen',
         traject: 'AVT',
-        website: 'https://stevenvantichelen.my.canva.site/'
+        website: 'https://stevenvantichelen.my.canva.site/',
+        img: STEVEN
     },
     'sazanloomans': {
         id: 'sazanloomans',
         first_name: 'Sazan',
         last_name: 'Loomans',
-        traject: 'Productie'
+        traject: 'Productie',
+        img: SAZAN
     },
     'robincooremans': {
         id: 'robincooremans',
         first_name: 'Robin',
         last_name: 'Cooremans',
         traject: 'AVT',
-        website: 'https://robincooremans.myportfolio.com/work'
+        website: 'https://robincooremans.myportfolio.com/work',
+        img: ROBIN
     },
     'pimvergeest': {
         id: 'pimvergeest',
         first_name: 'Pim',
         last_name: 'Vergeest',
         traject: 'Realisatie',
-        website: 'https://www.pimvergeest.nl/'
+        website: 'https://www.pimvergeest.nl/',
+        img: PIM
     },
     'mozalbak': {
         id: 'mozalbak',
         first_name: 'Mo',
         last_name: 'Zalbak',
         traject: 'Realisatie',
-        website: 'https://mohammadzalbak.my.canva.site/'
+        website: 'https://mohammadzalbak.my.canva.site/',
+        img: MO
     },
     'owenvandoorslaer': {
         id: 'owenvandoorslaer',
         first_name: 'Owen',
         last_name: 'Van Doorslaer',
         traject: 'AVT',
-        website: 'https://owenthecreator.com/'
+        website: 'https://owenthecreator.com/',
+        img: OWEN
     },
     'mirademulder': {
         id: 'mirademulder',
         first_name: 'Mira',
         last_name: 'De Mulder',
         traject: 'Realisatie',
-        website: 'https://mirademulder.myportfolio.com/work'
+        website: 'https://mirademulder.myportfolio.com/work',
+        img: MIRA
     },
     'margauxdecleyre': {
         id: 'margauxdecleyre',
         first_name: 'Margaux',
         last_name: 'Decleyre',
         traject: 'Realisatie',
-        website: 'https://margauxsmontage.my.canva.site/portfolio'
+        website: 'https://margauxsmontage.my.canva.site/portfolio',
+        img: MARGAUX
     },
     'martvandenheuvel': {
         id: 'martvandenheuvel',
         first_name: 'Mart',
         last_name: 'Van Den Heuvel',
         traject: 'Realisatie',
-        website: 'http://cine-mart.com/'
+        website: 'http://cine-mart.com/',
+        img: MART
     },
     'marievermeulen': {
         id: 'marievermeulen',
         first_name: 'Marie',
         last_name: 'Vermeulen',
         traject: 'Realisatie',
-        website: 'https://marievermeulen.my.canva.site/'
+        website: 'https://marievermeulen.my.canva.site/',
+        img: MARIE
     },
     'maartenaerssens': {
         id: 'maartenaerssens',
         first_name: 'Maarten',
         last_name: 'Aerssens',
         traject: 'AVT',
-        website: 'https://maartenaerssens.be/'
+        website: 'https://maartenaerssens.be/',
+        img: MAARTEN
     },
     'linavannerum': {
         id: 'linavannerum',
         first_name: 'Lina',
         last_name: 'Vannerum',
         traject: 'Realisatie',
-        website: 'https://linavannerum18.wixsite.com/vannlina'
+        website: 'https://linavannerum18.wixsite.com/vannlina',
+        img: LINA
     },
     'kianikhatrichetri': {
         id: 'kianikhatrichetri',
         first_name: 'Kiani',
         last_name: 'Khatri Chetri',
-        traject: 'Realisatie'
+        traject: 'Realisatie',
+        img: KIANI
     },
     'julescnudde': {
         id: 'julescnudde',
         first_name: 'Jules',
         last_name: 'Cnudde',
         traject: 'Realisatie',
-        website: 'https://www.julescnudde.com/'
+        website: 'https://www.julescnudde.com/',
+        img: JULES
     },
     'lukasvleugels': {
         id: 'lukasvleugels',
         first_name: 'Lukas',
         last_name: 'Vleugels',
         traject: 'Realisatie',
-        website: 'https://lukas-vleugels.my.canva.site/'
+        website: 'https://lukas-vleugels.my.canva.site/',
+        img: LUKAS
     },
     'khanyisilevanderheide': {
         id: 'khanyisilevanderheide',
         first_name: 'Khanyisile',
         last_name: 'Van Der Heide',
         traject: 'Realisatie',
-        website: 'https://khanyisilevanderheide.my.canva.site/khanyisile-van-der-heide'
+        website: 'https://khanyisilevanderheide.my.canva.site/khanyisile-van-der-heide',
+        img: KHANYISILE
     },
     'femkebeeckman': {
         id: 'femkebeeckman',
         first_name: 'Femke',
         last_name: 'Beeckman',
         traject: 'AVT',
-        website: 'https://femkebeeckman.be/'
+        website: 'https://femkebeeckman.be/',
+        img: FEMKE
     },
     'dallaechin': {
         id: 'dallaechin',
@@ -153,63 +209,72 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Cas',
         last_name: 'De Ridder',
         traject: 'AVT',
-        website: 'https://casderidder.myportfolio.com/work'
+        website: 'https://casderidder.myportfolio.com/work',
+        img: CAS
     },
     'brentdewin': {
         id: 'brentdewin',
         first_name: 'Brent',
         last_name: 'De Win',
         traject: 'AVT',
-        website: 'https://brentdewin.my.canva.site/'
+        website: 'https://brentdewin.my.canva.site/',
+        img: BRENTDW
     },
     'alexandramees': {
         id: 'alexandramees',
         first_name: 'Alexandra',
         last_name: 'Mees',
         traject: 'Productie',
-        website: 'https://alexandramees1dcc.myportfolio.com/home'
+        website: 'https://alexandramees1dcc.myportfolio.com/home',
+        img: ALEXANDRA
     },
     'aimyvandenbemden': {
         id: 'aimyvandenbemden',
         first_name: 'Aimy',
         last_name: 'Vanden Bemden',
         traject: 'Productie',
-        website: 'https://portfolio-aimyvandenbemden.my.canva.site/'
+        website: 'https://portfolio-aimyvandenbemden.my.canva.site/',
+        img: AIMY
     },
     'warddeleersnyder': {
         id: 'warddeleersnyder',
         first_name: 'Ward',
         last_name: 'Deleersnyder',
         traject: 'AVT',
-        website: 'https://warddeleersnyder.com'
+        website: 'https://warddeleersnyder.com',
+        img: WARD
     },
     'lukakeunen': {
         id: 'lukakeunen',
         first_name: 'Luka',
         last_name: 'Keunen',
         traject: 'Realisatie',
-        website: 'https://lukanie.my.canva.site/portfolio'
+        website: 'https://lukanie.my.canva.site/portfolio',
+        img: LUKA
     },
     'driesvandormael': {
         id: 'driesvandormael',
         first_name: 'Dries',
         last_name: 'Vandormael',
         traject: 'AVT',
-        website: 'https://driesvandormael.my.canva.site/'
+        website: 'https://driesvandormael.my.canva.site/',
+        img: DRIES
     },
     'wouttemmerman': {
         id: 'wouttemmerman',
         first_name: 'Wout',
         last_name: 'Temmerman',
         traject: 'AVT',
-        website: 'https://temmermanwout.my.canva.site/temmerman-wout'
+        website: 'https://temmermanwout.my.canva.site/temmerman-wout',
+        img: WOUT
     },
     'brentcauberghs': {
         id: 'brentcauberghs',
         first_name: 'Brent',
         last_name: 'Cauberghs',
         traject: 'Realisatie',
-        website: 'https://brentcauberghs.my.canva.site/'
+        website: 'https://brentcauberghs.my.canva.site/',
+        img: BRENTC
     },
     'nansialkhateeb': {
         id: 'nansialkhateeb',
@@ -222,21 +287,24 @@ export const students: { [name: string]: PortfolioStudent } = {
         first_name: 'Ophelia',
         last_name: 'Delhaye',
         traject: 'Realisatie',
-        website: 'https://opheliadelhaye.wixsite.com/my-site-1'
+        website: 'https://opheliadelhaye.wixsite.com/my-site-1',
+        img: OPHELIA
     },
     'ferremeyhi': {
         id: 'ferremeyhi',
         first_name: 'Ferre',
         last_name: 'Meyhi',
         traject: 'Productie',
-        website: 'https://ferremeyhi.my.canva.site/portfolio2025'
+        website: 'https://ferremeyhi.my.canva.site/portfolio2025',
+        img: FERRE
     },
     'tuurvangrimde': {
         id: 'tuurvangrimde',
         first_name: 'Tuur',
         last_name: 'Vangrimde',
         traject: 'Realisatie',
-        website: 'https://tuurvangrimde.my.canva.site/'
+        website: 'https://tuurvangrimde.my.canva.site/',
+        img: TUUR
     },
     'jonaschepens': {
         id: 'jonaschepens',
@@ -251,7 +319,8 @@ export const students: { [name: string]: PortfolioStudent } = {
         last_name: 'Coppieters',
         tagline: 'Professional nerd :)',
         traject: 'AVT',
-        website: 'https://maxim.infonet.media'
+        website: 'https://maxim.infonet.media',
+        img: MAXIM
     },
     'thibaultschroeven': {
         id: 'thibaultschroeven',
@@ -326,6 +395,8 @@ export const students: { [name: string]: PortfolioStudent } = {
         traject: 'Lost' // TODO verify
     }
 };
+
+export const nonLostStudents = Object.values(students).filter(student => student.traject !== 'Lost');
 
 export type StudentId = 'thiebewouters'
     | 'thanitsornverschueren'
