@@ -30,14 +30,15 @@ img {
 }
 
 .nav {
-    background-color: #fff;
+    background-color: var(--bg_color);
+    color: var(--font_color);
     height: 7rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     // justify-content: end;
     justify-content: center;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--shadow_color);
 }
 
 .nav__btn {
@@ -50,7 +51,7 @@ img {
     font-size: 2.5rem;
     font-weight: 600;
     cursor: pointer;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--shadow_color);
 }
 
 .nav__links {

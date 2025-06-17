@@ -1,28 +1,27 @@
 <template>
-    <div class="projcard projcard-blue">
-        <div class="projcard-innerbox">
-            <img class="projcard-img" :src="image" />
-            <div class="projcard-textbox">
-                <div class="projcard-title">{{ title }}</div>
-                <div class="projcard-subtitle">{{ tagline }}</div>
-                <div class="projcard-bar"></div>
-                <div class="projcard-description">{{ description }}</div>
-                <div class="projcard-tagbox">
-                    <span class="projcard-tag" v-for="string in tags">{{ string }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="projcard projcard-blue">
+		<div class="projcard-innerbox">
+			<img class="projcard-img" :src="image" />
+			<div class="projcard-textbox">
+				<div class="projcard-title">{{ title }}</div>
+				<div class="projcard-subtitle">{{ tagline }}</div>
+				<div class="projcard-bar"></div>
+				<div class="projcard-description">{{ description }}</div>
+				<div class="projcard-tagbox">
+					<span class="projcard-tag" v-for="string in tags">{{ string }}</span>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script setup lang="ts">
 const props = defineProps<{
-    title: string;
-    tagline: string;
-    description: string;
-    tags: string[];
-    image: string;
+	title: string;
+	tagline: string;
+	description: string;
+	tags: string[];
+	image: string;
 }>();
 </script>
 
@@ -42,9 +41,10 @@ const props = defineProps<{
 	height: 300px;
 	// margin-bottom: 40px;
 	// border-radius: 10px;
-	background-color: #fff;
+	// background-color: #fff;
+	background-color: var(--purple);
 	// border: 2px solid #ddd;
-    border: 2px solid black;
+    border: 2px solid var(--border_color);
 	font-size: 18px;
 	overflow: hidden;
 	cursor: pointer;

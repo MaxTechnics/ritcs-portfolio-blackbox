@@ -14,7 +14,7 @@
     padding: 0 auto;
     height: 40rem;
     overflow: hidden;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--shadow_color);
 }
 
 .header__content {
@@ -50,7 +50,7 @@
     height: 25rem;
     width: 25rem;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid var(--shadow_color);
     right: 0;
     top: 5rem;
 }
@@ -69,7 +69,7 @@
     height: 18rem;
     width: 18rem;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid var(--shadow_color);
     right: 20rem;
     bottom: -5rem;
 }

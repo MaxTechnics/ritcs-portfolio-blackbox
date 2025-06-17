@@ -138,11 +138,11 @@ section {
 
 .window {
     background-color: #fff;
-    border: 3px solid black;
-    box-shadow: 10px 10px 0 black;
+    border: 3px solid var(--shadow_color);
+    box-shadow: 10px 10px 0 var(--shadow_color);
 }
 .window h2 {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--shadow_color);
     padding: 1rem 3rem;
     position: relative;
     padding-right: 7rem;
@@ -154,7 +154,7 @@ section {
     position: absolute;
     width: 5rem;
     height: 100%;
-    border-left: 3px solid black;
+    border-left: 3px solid var(--shadow_color);
     top: 0;
     right: 0;
     display: grid;

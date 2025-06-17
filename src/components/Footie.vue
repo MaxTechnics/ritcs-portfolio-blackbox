@@ -17,14 +17,14 @@ const router = useRouter();
 <style lang="scss" scoped>
 .footie {
     margin-top: 2rem;
-    background-color: #fff;
+    background-color: var(--bg_color);
     height: 7rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: end;
     // justify-content: center;
-    border-top: 3px solid black;
+    border-top: 3px solid var(--shadow_color);
 }
 
 .footie__btn {
@@ -38,7 +38,7 @@ const router = useRouter();
     font-size: 2rem;
     font-weight: 600;
     cursor: pointer;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--shadow_color);
 }
 
 // .nav__links {

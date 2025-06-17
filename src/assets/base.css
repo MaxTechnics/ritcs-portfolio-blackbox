@@ -12,6 +12,11 @@
   --green: #99ff96;
   --primary: #54ffd6;
 
+
+  --bg_color: #000000;
+  --shadow_color: #ffffff;
+  --font_color: #ffffff;
+
   --content-width: 100rem;
 }
 
@@ -33,6 +38,8 @@ body {
   font-size: 1.8rem;
   line-height: 1;
   box-sizing: border-box;
+  background-color: var(--bg_color);
+  color: #fff;
 }
 
 h2 {

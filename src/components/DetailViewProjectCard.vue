@@ -59,14 +59,15 @@ const filteredCredits = computed(() => {
 
 <style lang="scss" scoped>
 .window {
-    background-color: #fff;
-    border: 3px solid black;
+    // background-color: #fff;
+    background-color: var(--bg_color);
+    border: 3px solid var(--shadow_color);
     box-shadow: 10px 10px 0 black;
     margin: auto;
     width: 100%;
 }
 .window h2 {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--shadow_color);
     padding: 1rem 3rem;
     position: relative;
     padding-right: 7rem;

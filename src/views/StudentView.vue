@@ -150,10 +150,10 @@ const filteredAndSortedStudents = computed(() => {
 
 fieldset {
     font-size: clamp(14px, 2.5vw, 28px);
-    box-shadow: 5px 5px 0 black;
+    box-shadow: 5px 5px 0 var(--shadow_color);
     border: none;
 	div {
-        border: 2px solid black;
+        border: 2px solid var(--shadow_color);
 		display: flex;
 		flex-wrap: wrap;
 		// margin-top: 0.5rem;

@@ -22,15 +22,15 @@ defineProps<{
     padding: 5rem;
 }
 .usercard {
-    border: 2px solid black;
+    border: 2px solid var(--shadow_color);
     padding: 2rem;
-    box-shadow: 5px 5px 0 #000;
+    box-shadow: 5px 5px 0 var(--shadow_color);
     width: min-content;
     transition: box-shadow 0.2s ease,
 }
 
 .usercard:hover {
-    box-shadow: 8px 8px 0 #000;
+    box-shadow: 8px 8px 0 var(--shadow_color);
 }
 
 h3 {
