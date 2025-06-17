@@ -16,7 +16,8 @@
             <h2>Projecten</h2>
 
             <div class="projdetails">
-                <DetailViewProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" />
+                <DetailViewProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" :filterbystudent="activeData.id" />
+                <!-- <p v-for="proj in filteredProjects">{{ proj }}</p> -->
             </div>
         </div>
     </section>
