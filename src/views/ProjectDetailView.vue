@@ -1,7 +1,7 @@
 <template>
     <section v-if="activeData">
         <div class="hero">
-            <div class="box"></div>
+            <img class="box" :src="activeData.image">
             <span>
                 <h1>{{ activeData.title }}</h1>
                 <p v-if="activeData.subtitle">{{ activeData.subtitle }}</p>
@@ -12,8 +12,26 @@
 
         <div class="projects">
             <h2>Credits</h2>
-
-            <p v-for="credit in activeData.credits" :key="credit.function + credit.personID">{{ credit.function }}: {{ students[credit.personID].first_name }} {{ students[credit.personID].last_name }}</p>
+            <div class="window">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Job</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for=" credit in activeData.credits" :key="credit.function + credit.personID">
+                            <td>{{ credit.function }}</td>
+                            <td>{{ students[credit.personID].first_name }} {{ students[credit.personID].last_name }}</td>
+                            <td style="display: flex; justify-content: center; align-content: center;">
+                                <ButtonInput>Bekijk student</ButtonInput>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
     <section v-else>
@@ -28,6 +46,7 @@ import { useRoute } from 'vue-router';
 import { projects as allProjects, type PortfolioProject } from '@/data/projects'; // Assuming you have a projects data file
 import DetailViewProjectCard from '@/components/DetailViewProjectCard.vue';
 import { students } from '@/data/students';
+import ButtonInput from '@/components/ButtonInput.vue';
 
 const route = useRoute();
 const activeData = ref<PortfolioProject>();
@@ -115,4 +134,63 @@ section {
 
     background-color: orange;
 }
+
+
+.window {
+    background-color: #fff;
+    border: 3px solid black;
+    box-shadow: 10px 10px 0 black;
+}
+.window h2 {
+    border-bottom: 3px solid black;
+    padding: 1rem 3rem;
+    position: relative;
+    padding-right: 7rem;
+    font-size: 3.5rem;
+}
+.window h2::after {
+    content: 'x';
+    display: block;
+    position: absolute;
+    width: 5rem;
+    height: 100%;
+    border-left: 3px solid black;
+    top: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+}
+
+table {
+    padding: 1rem 3rem 2rem 3rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody {
+    font-weight: 600;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--purple); /* Light gray or any color you like */
+}
+
+table td{
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    // padding-right: 3rem;
+    // padding-bottom: 1rem;
+    // padding-bottom: 2rem;
+}
+table th{
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    padding-right: 1rem;
+    // padding-bottom: .8rem;
+    padding-bottom: 1.5rem;
+}
+
 </style>
