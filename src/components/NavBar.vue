@@ -28,6 +28,7 @@ img {
 }
 .active {
     font-weight: bold !important;
+    color: var(--accent_red) !important;
 }
 
 .nav {
