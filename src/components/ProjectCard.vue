@@ -4,7 +4,7 @@
 			<img class="projcard-img" :src="image" />
 			<div class="projcard-textbox">
 				<div class="projcard-title">{{ title }}</div>
-				<div class="projcard-subtitle">{{ tagline }}</div>
+				<div class="projcard-subtitle" v-if="tagline">{{ tagline }}</div>
 				<div class="projcard-bar"></div>
 				<div class="projcard-description">{{ description }}</div>
 				<div class="projcard-tagbox">
@@ -16,9 +16,9 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
 	title: string;
-	tagline: string;
+	tagline?: string;
 	description: string;
 	tags: string[];
 	image: string;
@@ -41,10 +41,9 @@ const props = defineProps<{
 	height: 300px;
 	// margin-bottom: 40px;
 	// border-radius: 10px;
-	// background-color: #fff;
-	background-color: var(--purple);
+	background-color: var(--accent_blu);
 	// border: 2px solid #ddd;
-    border: 2px solid var(--border_color);
+    border: 2px solid black;
 	font-size: 18px;
 	overflow: hidden;
 	cursor: pointer;
@@ -119,6 +118,7 @@ const props = defineProps<{
 	display: block;
 	background: #ff0000bb;
 	background: #fff;
+	background-color: var(--accent_blu);
 	top: -20%;
 	left: -55px;
 	height: 140%;
