@@ -351,7 +351,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         last_name: 'Schepens',
         job_titles: ['Licht scenografie'],
         traject: 'AVT',
-        website: 'https://jona-schepens.webnode.be/portfolio/',
+        website: 'https://jonaschepens.my.canva.site/',
         img: GENERIC
     },
     'maximcoppieters': {
