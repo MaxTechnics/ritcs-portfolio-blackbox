@@ -9,6 +9,7 @@
                 <p v-if="activeData.job_titles">{{ activeData.job_titles.join(' • ') }}</p>
                 <br>
                 <p v-if="activeData.website">Website: {{ activeData.website }}</p>
+                <ButtonInput v-if="activeData.website" @click="dofuck">Bekijk portfolio</ButtonInput>
             </span>
             <img v-if="activeData.website" :src="qr" class="qr" style="margin-left: auto;">
         </div>
@@ -38,6 +39,7 @@ import { useRoute } from 'vue-router';
 import { useQRCode } from '@vueuse/integrations/useQRCode';
 import { projects as allProjects } from '@/data/projects'; // Assuming you have a projects data file
 import DetailViewProjectCard from '@/components/DetailViewProjectCard.vue';
+import ButtonInput from '@/components/ButtonInput.vue'
 
 const route = useRoute();
 const activeData = ref<PortfolioStudent>();
@@ -57,6 +59,12 @@ const filteredProjects = computed(() => {
         project.credits.some(credit => credit.personID === activeData.value?.id)
     );
 });
+
+const dofuck = () => {
+    // open in new tab
+    // @ts-ignore fuck this it's not null
+    window.open(activeData.value?.website as string, '_blank').focus();
+}
 
 const init = () => {
     console.log('Loading user detail view for routename', route.params.name);
