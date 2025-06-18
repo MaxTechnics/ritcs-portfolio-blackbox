@@ -579,7 +579,7 @@ export const projects: PortfolioProject[] = [
         title: 'DANSAeRT',
         subtitle: 'Praktijk 3',
         workyear: '2324',
-        description: '',// TODO
+        description: 'Studio DOP maakte een installatie waar je een eigen visueel kunstwerk maakt op basis van jouw dansmoves!',// TODO
         image: PRAKT_3_DANSAERT,
         tags: ['Installatie'],
         personal: false,
