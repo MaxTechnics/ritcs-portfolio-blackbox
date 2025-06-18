@@ -83,6 +83,7 @@ fieldset {
     font-size: clamp(14px, 2.5vw, 28px);
     box-shadow: 5px 5px 0 var(--shadow_color);
     border: none;
+    text-transform: uppercase;
 	div {
         border: 2px solid var(--shadow_color);
 		display: flex;
