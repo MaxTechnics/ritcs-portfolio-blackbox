@@ -324,7 +324,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         last_name: 'Delhaye',
         job_titles: ['Art direction', 'Regie', 'Muziekproductie'],
         traject: 'Realisatie',
-        website: 'https://opheliadelhaye.wixsite.com/my-site-1',
+        website: 'https://opheliadelhayeportfolio.my.canva.site/',
         img: OPHELIA
     },
     'ferremeyhi': {

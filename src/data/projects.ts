@@ -27,6 +27,7 @@ import PRAKT_3_ADAM from '@/assets/projectimg/prakt_3_adam.jpg';
 import BC_SPORT_GYMGALA from '@/assets/projectimg/bc_sport_gymgala.jpg';
 import BC_SPORT_BEATRICE from '@/assets/projectimg/bc_sport_beatrice.jpg';
 import BC_SPORT_BOUBA from '@/assets/projectimg/bc_sport_bouba.jpg';
+import BC_SPORT_STEVEN from '@/assets/projectimg/bc_sport_steven.jpg'; // TODO TEST
 import BC_SPORT_NILSON from '@/assets/projectimg/bc_sport_nilson.jpg';
 import BC_HYBRIDE_BEYOND from '@/assets/projectimg/bc_hybride_beyond.jpg';
 import BC_HYBRIDE_MAKKELIJK from '@/assets/projectimg/bc_hybride_makkelijk.jpg';
@@ -34,6 +35,40 @@ import BC_HYBRIDE_LIVINGROOM from '@/assets/projectimg/bc_hybride_livingroom.jpg
 import BC_REALITY_HART_OP_ZOEK from '@/assets/projectimg/bc_reality_hart_op_zoek.jpg';
 import WINTERSCHOOL_POSTITMUUR from '@/assets/projectimg/winterschool_postitmuur.jpg';
 import BC_BRDCSTLB_KAIN from '@/assets/projectimg/bc_brdcstlb_kain.jpg';
+import BC_BRDCSTLB_YMIR from '@/assets/projectimg/bc_brdcstlb_ymir.jpg';
+import BC_BRDCSTLB_MYMETAMIXER from '@/assets/projectimg/bc_brdcstlb_mymetamixer.jpg';
+import BC_AIRBOX_9TO5 from '@/assets/projectimg/bc_airbox_9to5.jpg';
+import AIRBOX_KCB_NIEUWJAARSCONCERT from '@/assets/projectimg/airbox_kcb_nieuwjaarsconcert.jpg';
+import MUZIEKVIDEO_MERGEL from '@/assets/projectimg/muziekvideo_mergel.jpg';
+import MUZIEKVIDEO_O_VAZIO from '@/assets/projectimg/muziekvideo_o_vazio.jpg';
+import PORTRET_LUKAS_DYMANOWSKI from '@/assets/projectimg/portret_lukas_dymanowski.jpg';
+import AIRBOX_POINT_OF_U from '@/assets/projectimg/airbox_point_of_u.jpg';
+import AIRBOX_BARVIZART from '@/assets/projectimg/airbox_barvizart.jpg';
+import AIRBOX_FASCINATIE_STEVE_KEPPENS from '@/assets/projectimg/airbox_fascinatie_steve_keppens.jpg';
+import AIRBOX_CAMPUS_KAAI from '@/assets/projectimg/airbox_campus_kaai.jpg';
+import AIRBOX_PORTRETTEN_GRAFFITI from '@/assets/projectimg/airbox_portretten_graffiti.jpg';
+import AIRBOX_FIFTY_LAB from '@/assets/projectimg/airbox_fifty_lab.jpg';
+import AIRBOX_FIFTY_LAB_VOXPOPS from '@/assets/projectimg/airbox_fifty_lab_voxpops.jpg';
+import AIRBOX_FIFTY_LAB_VENUES from '@/assets/projectimg/airbox_fifty_lab_venues.jpg';
+import AIRBOX_WINTEREVENT from '@/assets/projectimg/airbox_winterevent.jpg';
+import AIRBOX_SOB_2025_EINDCEREMONIE from '@/assets/projectimg/airbox_sob_2025_eindceremonie.jpg';
+import AIRBOX_SOB_2025_BOCCE_TAFELTENNIS from '@/assets/projectimg/airbox_sob_2025_bocce_tafeltennis.jpg';
+import AIRBOX_SOB_2025_BASKET from '@/assets/projectimg/airbox_sob_2025_basket.jpg';
+import AIRBOX_TAZ from '@/assets/projectimg/taz.jpg';
+import AIRBOX_BACHELORCLASS_HYBRIDE from '@/assets/projectimg/bc_hybride_2023.jpg';
+import AIRBOX_TAKE_5_BRUSSELS from '@/assets/projectimg/2023_airbox_take_5_brussels.jpg';
+import RBX23_IMPULSIVE from '@/assets/projectimg/2023_impulsivegirl.jpg';
+import AIRBOX_URBAN_MOTION_PORTRAITS from '@/assets/projectimg/urban_motion_portraits.jpg';
+import BP_OPHELIA from '@/assets/projectimg/bp_ophelia.jpg';
+import BP_JULES_EVOLUTIE_VAN_MUZIEK from '@/assets/projectimg/bp_jules_evolutie_van_muziek.jpg';
+import BP_4D_VIDEO from '@/assets/projectimg/bp_4d_video.jpg';
+import BP_SNORRICAM_V2 from '@/assets/projectimg/bp_snorricam_v2.jpg';
+import BP_RADIO_SLAIMY from '@/assets/projectimg/bp_radio_slaimy.jpg';
+import BP_WATER_PROJECTIE from '@/assets/projectimg/bp_water_projectie.jpg';
+import BP_LUIGI_COLZATO_FLOODGATES from '@/assets/projectimg/bp_luigi_colzato_floodgates.jpg';
+import BP_BENT_FIERENS from '@/assets/projectimg/bp_bent_fierens.jpg';
+import BP_MAXIM from '@/assets/projectimg/bp_maxim.jpg';
+
 
 import { students, type StudentId } from "./students";
 
@@ -234,17 +269,17 @@ export const projects: PortfolioProject[] = [
             { personID: 'marievermeulen', function: 'Regie' }
         ]
     },
-    {
-        id: 'repo_elsene_luxiol',
-        title: 'Luxiol',
-        subtitle: 'Bezienwaardigheid Elsene',
-        workyear: '2223',
-        description: 'Reportage over Fred, uitbater van de winkel Luxiol te Elsene',
-        image: REPO_ELSENE_LUXIOL,
-        tags: ['Brussel', 'Reportage'],
-        personal: false,
-        credits: [] // FIXME mobo missing credits!!!!!!!!!!
-    },
+    // {
+    //     id: 'repo_elsene_luxiol',
+    //     title: 'Luxiol',
+    //     subtitle: 'Bezienwaardigheid Elsene',
+    //     workyear: '2223',
+    //     description: 'Reportage over Fred, uitbater van de winkel Luxiol te Elsene',
+    //     image: REPO_ELSENE_LUXIOL,
+    //     tags: ['Brussel', 'Reportage'],
+    //     personal: false,
+    //     credits: [] // FIXME mobo missing credits!!!!!!!!!!
+    // },
     {
         id: 'repo_anderlecht_christophe',
         title: 'Christophe Caurdon',
@@ -333,7 +368,6 @@ export const projects: PortfolioProject[] = [
             { personID: 'linavannerum', function: 'Camera' },
             { personID: 'pimvergeest', function: 'Camera' },
             { personID: 'marievermeulen', function: 'Camera' },
-            { personID: 'lukakeunen', function: 'Camera' },
             { personID: 'thiebewouters', function: 'Camera' },
             { personID: 'thiebewouters', function: 'Regie' },
             { personID: 'sazanloomans', function: 'Productie' },
@@ -558,20 +592,20 @@ export const projects: PortfolioProject[] = [
             { personID: 'marievermeulen', function: 'Regie' }
         ]
     },
-    {
-        id: 'prakt_3_adam',
-        title: 'This is Adam',
-        subtitle: 'Praktijk 3',
-        workyear: '2324',
-        description: '', // TODO
-        image: PRAKT_3_ADAM,
-        tags: ['Installatie'],
-        personal: false,
-        credits: [
-            { personID: 'martvandenheuvel', function: 'Regie' },
-            { personID: 'brentcauberghs', function: 'Montage' }
-        ]
-    },
+    // {
+    //     id: 'prakt_3_adam',
+    //     title: 'This is Adam',
+    //     subtitle: 'Praktijk 3',
+    //     workyear: '2324',
+    //     description: '', // TODO
+    //     image: PRAKT_3_ADAM,
+    //     tags: ['Installatie'],
+    //     personal: false,
+    //     credits: [
+    //         { personID: 'martvandenheuvel', function: 'Regie' },
+    //         { personID: 'brentcauberghs', function: 'Montage' }
+    //     ]
+    // },
     {
         id: 'prakt_3_dystopia',
         title: 'Dystopia',
@@ -597,27 +631,27 @@ export const projects: PortfolioProject[] = [
             { personID: 'thanitsornverschueren', function: 'Productie' }
         ]
     },
-    {
-        id: 'prakt_3_connect',
-        title: 'Connect',
-        subtitle: 'Praktijk 3',
-        workyear: '2324',
-        description: '', // TODO
-        // image: PRAKT_3_CONNECT, // FIXME
-        image: '',
-        tags: ['Installatie'],
-        personal: false,
-        credits: [
-            { personID: 'margauxdecleyre', function: 'Regie Assistent' },
-            { personID: 'warddeleersnyder', function: 'Promotor' },
-            { personID: 'mirademulder', function: 'Regie Assistent' },
-            { personID: 'casderidder', function: 'DOP' },
-            { personID: 'casderidder', function: 'Geluid' },
-            { personID: 'lukasvleugels', function: 'Regie Assistent' },
-            { personID: 'thiebewouters', function: 'Techniek' },
-            { personID: 'aimyvandenbemden', function: 'Productie' }
-        ]
-    },
+    // {
+    //     id: 'prakt_3_connect',
+    //     title: 'Connect',
+    //     subtitle: 'Praktijk 3',
+    //     workyear: '2324',
+    //     description: '', // TODO
+    //     // image: PRAKT_3_CONNECT, // FIXME
+    //     image: '',
+    //     tags: ['Installatie'],
+    //     personal: false,
+    //     credits: [
+    //         { personID: 'margauxdecleyre', function: 'Regie Assistent' },
+    //         { personID: 'warddeleersnyder', function: 'Promotor' },
+    //         { personID: 'mirademulder', function: 'Regie Assistent' },
+    //         { personID: 'casderidder', function: 'DOP' },
+    //         { personID: 'casderidder', function: 'Geluid' },
+    //         { personID: 'lukasvleugels', function: 'Regie Assistent' },
+    //         { personID: 'thiebewouters', function: 'Techniek' },
+    //         { personID: 'aimyvandenbemden', function: 'Productie' }
+    //     ]
+    // },
     // {
     //     id: 'prakt_3_womb',
     //     title: 'the womb',
@@ -694,6 +728,24 @@ export const projects: PortfolioProject[] = [
     },
 
     // FIXME portret jona ferre jules
+    {
+        id: 'bc_sport_steven',
+        title: 'Portret Steven Dillien',
+        subtitle: 'Bachelorclass sport',
+        workyear: '2425',
+        description: 'Portret van RSCA futsal speler Steven Dillien',
+        image: BC_SPORT_STEVEN,
+        tags: ['Sport', 'Portret', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            { personID: 'julescnudde', function: 'Regie' },
+            { personID: 'julescnudde', function: 'Camera' },
+            { personID: 'jonaschepens', function: 'Camera' },
+            { personID: 'jonaschepens', function: 'Licht' },
+            { personID: 'ferremeyhi', function: 'Productie' }
+        ]
+
+    },
     {
         id: 'bc_sport_bouba',
         title: 'Portret Bouba',
@@ -860,6 +912,652 @@ export const projects: PortfolioProject[] = [
             { personID: 'kianikhatrichetri', function: 'Regie' },
             { personID: 'driesvandormael', function: 'Compositing' },
             { personID: 'driesvandormael', function: 'Animatie' }
+        ]
+    },
+    {
+        id: 'bc_brdcstlb_ymir',
+        title: 'Ymir',
+        subtitle: 'Bachelorclass BRDCSTLB',
+        workyear: '2425',
+        description: 'Een korte cinematic over Ymir, het eerste levende wezen in de Noorse mythologie, als eindstuk van onze bachelorclass BRDCSTLB.',
+        image: BC_BRDCSTLB_YMIR,
+        tags: ['Unreal Engine', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            { personID: 'brentcauberghs', function: 'Camera' },
+            { personID: 'warddeleersnyder', function: 'Compositing' },
+            { personID: 'martvandenheuvel', function: 'Regie' },
+            { personID: 'driesvandormael', function: 'Compositing' },
+            { personID: 'driesvandormael', function: 'Animatie' }
+        ]
+    },
+    {
+        id: 'bc_brdcstlb_mymetamixer',
+        title: 'MyMetaMixer',
+        subtitle: 'Bachelorclass BRDCSTLB',
+        workyear: '2425',
+        description: 'Tijdens onze Bachelorclass BRDCSTLB kregen we de opdracht om UnReal Engine toe te passen binnen een fictie project. MyMetaMixer volgt een eigenwijze mixer die transporteert naar een fictieve wereld. De enige oplossing voor de liefhebbende eigenares is zichzelf naar de meta wereld te snuiven.',
+        image: BC_BRDCSTLB_MYMETAMIXER,
+        tags: ['Unreal Engine', 'Bachelorclass'],
+        personal: false,
+        credits: [
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'owenvandoorslaer', function: 'Techniek' },
+            { personID: 'pimvergeest', function: 'Regie' }
+        ]
+    },
+    {
+        // Title: 9 to 5 De musical 
+
+        // Beschrijving: De sprankelende & meeslepende voorstelling Nine to Five: De Musical, gebaseerd op de gelijknamige film en muziek van Dolly Parton word gebracht door de derde jaars studenten van de KCB Musical opleiding. Live uitgezonden en opgenomen door de RITCS Airbox crew 
+
+        // Credits: • Aerssens, Maarten [Geluid]  • Alkhateeb, Nansi [Regisseur]  • Cooremans, Robin [Geluid]  • Coppieters, Maxim [Geluid]  • Coppieters, Maxim [Productie]  • Coppieters, Maxim [Techniek]  • Decleyre, Margaux [Opnameleider]  • Depotter, James [Camera]  • De Ridder, Cas [Colorgrading-Etalonnage]  • Mees, Alexandra [Regie assistent]  • Schepens, Jona [Camera]  • Stroobants, Fien [Geluid]  • Temmerman, Wout [Geluid]  • Vandormael, Dries [Licht]  • Vandormael, Dries [Productie]  • Vangrimde, Tuur [Montage]  • Vangrimde, Tuur [Productie]  • Vangrimde, Tuur [Regisseur]  • Vannerum, Lina [Montage]  • Wouters, Thiebe [Camera] 
+
+        // Tags: Airbox, Musical, KCB 
+        id: 'airbox_9to5',
+        title: '9 to 5 De Musical',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'De sprankelende & meeslepende voorstelling Nine to Five: De Musical, gebaseerd op de gelijknamige film en muziek van Dolly Parton word gebracht door de derde jaars studenten van de KCB Musical opleiding. Live uitgezonden en opgenomen door de RITCS Airbox crew.',
+        image: BC_AIRBOX_9TO5,
+        tags: ['Airbox', 'Musical', 'KCB'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Geluid' },
+            { personID: 'nansialkhateeb', function: 'Regie' },
+            { personID: 'robincooremans', function: 'Geluid' },
+            { personID: 'maximcoppieters', function: 'Geluid' },
+            { personID: 'maximcoppieters', function: 'Productie' },
+            { personID: 'maximcoppieters', function: 'Techniek' },
+            { personID: 'margauxdecleyre', function: 'Opnameleiding' },
+            { personID: 'jamesdepotter', function: 'Camera' },
+            { personID: 'casderidder', function: 'Grading' },
+            { personID: 'alexandramees', function: 'Regie Assistent' },
+            { personID: 'jonaschepens', function: 'Camera' },
+            { personID: 'wouttemmerman', function: 'Geluid' },
+            { personID: 'driesvandormael', function: 'Licht' },
+            { personID: 'driesvandormael', function: 'Grafisch Design' },
+            { personID: 'driesvandormael', function: 'Productie' },
+            { personID: 'tuurvangrimde', function: 'Montage' },
+            { personID: 'tuurvangrimde', function: 'Productie' },
+            { personID: 'tuurvangrimde', function: 'Regie' },
+            { personID: 'linavannerum', function: 'Montage' },
+            { personID: 'thiebewouters', function: 'Camera' }
+        ]
+    },
+    {
+        id: 'airbox_kcb_nieuwjaarsconcert',
+        title: 'KCB Nieuwjaarsconcert 2025',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'Het jaarlijkse KCB Nieuwjaarsconcert, georganiseerd door het Koninklijk Conservatorium van Brussel en de Erasmushogeschool Brussel, dat dit jaar plaatsvond in de KVS te Brussel. Deze opname, gecapteerd door de 3e jaars studenten professionele bachelor audiovisuele kunsten van het RITCS, geeft het gehele nieuwjaarsconcert weer van strijkersensemble tot musicalkoor, maar ook de nieuwjaarstoespraak van de algemene directeur van de Erasmushogeschool.',
+        image: AIRBOX_KCB_NIEUWJAARSCONCERT,
+        tags: ['Airbox', 'KCB', 'Concert'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Geluid' },
+            { personID: 'nansialkhateeb', function: 'Montage' },
+            { personID: 'nansialkhateeb', function: 'Regie' },
+            { personID: 'femkebeeckman', function: 'Grading' },
+            { personID: 'robincooremans', function: 'Geluid' },
+            { personID: 'maximcoppieters', function: 'Techniek' },
+            { personID: 'margauxdecleyre', function: 'Camera' },
+            { personID: 'warddeleersnyder', function: 'Camera' },
+            { personID: 'jamesdepotter', function: 'Camera' },
+            { personID: 'sazanloomans', function: 'Opnameleiding' },
+            { personID: 'alexandramees', function: 'Regie Assistent' },
+            { personID: 'jonaschepens', function: 'Licht' },
+            { personID: 'wouttemmerman', function: 'Geluid' },
+            { personID: 'driesvandormael', function: 'Licht' },
+            { personID: 'tuurvangrimde', function: 'Montage' },
+            { personID: 'tuurvangrimde', function: 'Regie' },
+            { personID: 'linavannerum', function: 'Productie' },
+            { personID: 'linavannerum', function: 'Montage' },
+            { personID: 'linavannerum', function: 'Regie' },
+            { personID: 'stevenvantichelen', function: 'Geluid' },
+            { personID: 'thiebewouters', function: 'Productie' },
+            { personID: 'thiebewouters', function: 'Montage' }
+        ]
+    },
+    {
+        id: 'muziekvideo_mergel',
+        title: 'MERGEL - LIVE @ STELPLAATS LEUVEN',
+        subtitle: 'Muziek Video',
+        workyear: '2425',
+        description: 'Livemuziekperformance van een jonge Belgische band genaamd Mergel op een unieke locatie. In een uithoek van het Stelplaats-gebouw in Leuven speelt Mergel 3 nummers: Ik Wil Dat Je Mij Ziet, Altijd Tijd en ze eindigen met Waarheid. Deze nummers zijn gecapteerd en samengebracht tot een geheel dat de nummers verbindt en het onderling contrast aantoont van zowel het muzikale als de betekenis erachter. Mergel neemt je mee door het proces van een stukgelopen relatie, een reis van donker naar licht en van rust naar euforie.',
+        image: MUZIEKVIDEO_MERGEL,
+        tags: ['Airbox', 'Muziek', 'Band'],
+        personal: false,
+        credits: [
+            { personID: 'robincooremans', function: 'Geluid' },
+            { personID: 'margauxdecleyre', function: 'Productie' },
+            { personID: 'opheliadelhaye', function: 'Art Director' },
+            { personID: 'jamesdepotter', function: 'Licht' },
+            { personID: 'jonaschepens', function: 'Productie' },
+            { personID: 'wouttemmerman', function: 'Mixing' },
+            { personID: 'driesvandormael', function: 'Camera' },
+            { personID: 'tuurvangrimde', function: 'Grading' },
+            { personID: 'linavannerum', function: 'Art Director' },
+            { personID: 'thiebewouters', function: 'Montage' },
+            { personID: 'thiebewouters', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'muziekvideo_o_vazio',
+        title: 'Dansclip O Vazio - Ão',
+        subtitle: 'Muziek Video',
+        workyear: '2425',
+        description: 'Een dansclip op het nummer O Vazio van Ão. Een choreografie van Pélé Van Eemeren, gedanst door Pélé Van Eemeren en Simon Nelissen.',
+        image: MUZIEKVIDEO_O_VAZIO,
+        tags: ['Airbox', 'Dans'],
+        personal: false,
+        credits: [
+            { personID: 'nansialkhateeb', function: 'Productie' },
+            { personID: 'robincooremans', function: 'Camera' },
+            { personID: 'margauxdecleyre', function: 'Productie' },
+            { personID: 'margauxdecleyre', function: 'Regie' },
+            { personID: 'margauxdecleyre', function: 'Montage' },
+            { personID: 'wouttemmerman', function: 'Productie' }
+        ]
+    },
+    {
+        id: 'portret_lukas_dymanowski',
+        title: 'Portret Lukas Dymanowski',
+        subtitle: 'Portret',
+        workyear: '2425',
+        description: 'Lukas Dymanowski (27), Brusselse fotograaf. We spraken met hem over zijn traject, zijn tijd bij MIMA en hoe kunstplekken in de stad verdwijnen. Gemaakt door ons, RITCS-studenten.',
+        image: PORTRET_LUKAS_DYMANOWSKI,
+        tags: ['Portret', 'Airbox', 'Kunst'],
+        personal: false,
+        credits: [
+            { personID: 'sazanloomans', function: 'Regie' },
+            { personID: 'brentdewin', function: 'Camera Assistent' },
+            { personID: 'dallaechin', function: 'Montage' },
+            { personID: 'ferremeyhi', function: 'Geluid' },
+            { personID: 'warddeleersnyder', function: 'Camera' },
+            { personID: 'pimvergeest', function: 'Regie Assistent' },
+            { personID: 'martvandenheuvel', function: 'Regie Assistent' },
+            { personID: 'owenvandoorslaer', function: 'Licht' }
+        ]
+    },
+    {
+        id: 'airbox_point_of_u',
+        title: 'Livestream Point of U 2024',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'Livestream van het verticale filmfestival met workshops en talks voor jonge makers.',
+        image: AIRBOX_POINT_OF_U,
+        tags: ['Airbox', 'Live Stream', 'Filmfestival'],
+        personal: false,
+        credits: [
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'pimvergeest', function: 'Regie' },
+            { personID: 'martvandenheuvel', function: 'Regie' },
+            { personID: 'ferremeyhi', function: 'Camera' },
+            { personID: 'dallaechin', function: 'Camera' },
+            { personID: 'brentdewin', function: 'Camera' },
+            { personID: 'owenvandoorslaer', function: 'Chef Techniek' },
+            { personID: 'warddeleersnyder', function: 'Geluid' }
+        ]
+    },
+    {
+        id: 'airbox_barvizart',
+        title: 'BarVIZart - Kollectief',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'In opdracht van BarVIZart hebben we een promotievideo gemaakt die het volledig overkoepelend orgaan BarVIZart promoot met daarbij speciale aandacht naar Kollectief, een initiatief van Kannet.',
+        image: AIRBOX_BARVIZART,
+        tags: ['Airbox', 'Promo', 'Kunst'],
+        personal: false,
+        credits: [
+            { personID: 'dallaechin', function: 'Montage' },
+            { personID: 'warddeleersnyder', function: 'Techniek' },
+            { personID: 'brentdewin', function: 'Techniek' },
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'ferremeyhi', function: 'Productie' },
+            { personID: 'martvandenheuvel', function: 'Regie' },
+            { personID: 'owenvandoorslaer', function: 'Techniek' },
+            { personID: 'pimvergeest', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'airbox_fascinatie_steve_keppens',
+        title: 'Fascinatie - Steve Keppens',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'In deze korte docu komen we meer te weten over het leven van rolstoel atleet Steve Keppens. We zien ook zijn prestaties in de tijdrit en in de veldrit dit jaar voor de beker van België.',
+        image: AIRBOX_FASCINATIE_STEVE_KEPPENS,
+        tags: ['Airbox', 'Sport', 'Extreem', 'Atleet'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Camera' },
+            { personID: 'casderidder', function: 'Regie' },
+            { personID: 'casderidder', function: 'Camera' },
+            { personID: 'casderidder', function: 'Montage' },
+            { personID: 'alexandramees', function: 'Regie Assistent' },
+            { personID: 'marievermeulen', function: 'Regie' },
+            { personID: 'marievermeulen', function: 'Camera' }
+        ]
+    },
+    {
+        id: 'airbox_campus_kaai',
+        title: 'Nieuwe Campus Kaai',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'Promotie van de nieuwe Campus Kaai voor de afdeling Drama.',
+        image: AIRBOX_CAMPUS_KAAI,
+        tags: ['Airbox', 'Campus Kaai', 'Promo'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Techniek' },
+            { personID: 'dallaechin', function: 'Montage' },
+            { personID: 'julescnudde', function: 'Camera' },
+            { personID: 'wouttemmerman', function: 'Techniek' },
+            { personID: 'khanyisilevanderheide', function: 'Productie' },
+            { personID: 'thanitsornverschueren', function: 'Techniek' },
+            { personID: 'lukasvleugels', function: 'Productie' }
+        ]
+    },
+    {
+        id: 'airbox_portretten_graffiti',
+        title: 'Portretten van Graffiti kunstenaars',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'Portretten van vrouwlijke graffiti kunstenaars tijden het airbox project !mpulsive Girl Tour',
+        image: AIRBOX_PORTRETTEN_GRAFFITI,
+        tags: ['Airbox', 'Graffiti', 'Aftermovie', 'Portret'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Camera' },
+            { personID: 'julescnudde', function: 'Montage' },
+            { personID: 'alexandramees', function: 'Regie' },
+            { personID: 'marievermeulen', function: 'Montage' },
+            { personID: 'casderidder', function: 'Montage' }
+        ]
+    },
+    {
+        id: 'airbox_fifty_lab',
+        title: 'Fifty Lab Promovideo',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'Fifty Lab = pure magic. Van 13 tot 15 november nieuwe sounds, onverwachte acts en alleen maar goede vibes in de straten van Brussel 🔊🎶 We brengen jullie via AirBox naar het festival. Naast festivalfootage nemen we jullie ook mee backstage! Plezier verzekerd! Hou onze socials dus zeker in de gaten! Hier al een kleine voorproever 🔥✨',
+        image: AIRBOX_FIFTY_LAB,
+        tags: ['Airbox', 'Festival', 'Brussel', 'Muziek', 'Social Media', 'Promo'],
+        personal: false,
+        credits: [
+            { personID: 'femkebeeckman', function: 'Camera' },
+            { personID: 'femkebeeckman', function: 'Acteur' },
+            { personID: 'brentcauberghs', function: 'Productie' },
+            { personID: 'brentcauberghs', function: 'Regie' },
+            { personID: 'brentcauberghs', function: 'Camera' },
+            { personID: 'jamesdepotter', function: 'Met dank aan' },
+            { personID: 'sazanloomans', function: 'Met dank aan' },
+            { personID: 'kianikhatrichetri', function: 'Regie' },
+            { personID: 'kianikhatrichetri', function: 'Camera' },
+            { personID: 'kianikhatrichetri', function: 'Acteur' },
+            { personID: 'kianikhatrichetri', function: 'Productie' },
+            { personID: 'aimyvandenbemden', function: 'Productie' },
+            { personID: 'stevenvantichelen', function: 'Acteur' },
+            { personID: 'stevenvantichelen', function: 'Chef Geluid' },
+            { personID: 'pimvergeest', function: 'Met dank aan' },
+            { personID: 'mozalbak', function: 'Camera' },
+            { personID: 'mozalbak', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'airbox_fifty_lab_voxpops',
+        title: 'Fifty Lab Voxpops',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'What do the people in Brussel think about Fifty Lab?',
+        image: AIRBOX_FIFTY_LAB_VOXPOPS,
+        tags: ['Airbox', 'Festival', 'Brussel', 'Muziek', 'Voxpops', 'Social Media'],
+        personal: false,
+        credits: [
+            { personID: 'femkebeeckman', function: 'Camera' },
+            { personID: 'femkebeeckman', function: 'Acteur' },
+            { personID: 'brentcauberghs', function: 'Productie' },
+            { personID: 'brentcauberghs', function: 'Regie' },
+            { personID: 'brentcauberghs', function: 'Camera' },
+            { personID: 'jamesdepotter', function: 'Met dank aan' },
+            { personID: 'sazanloomans', function: 'Met dank aan' },
+            { personID: 'kianikhatrichetri', function: 'Regie' },
+            { personID: 'kianikhatrichetri', function: 'Camera' },
+            { personID: 'kianikhatrichetri', function: 'Acteur' },
+            { personID: 'kianikhatrichetri', function: 'Productie' },
+            { personID: 'aimyvandenbemden', function: 'Productie' },
+            { personID: 'stevenvantichelen', function: 'Acteur' },
+            { personID: 'stevenvantichelen', function: 'Chef Geluid' },
+            { personID: 'pimvergeest', function: 'Met dank aan' },
+            { personID: 'mozalbak', function: 'Camera' },
+            { personID: 'mozalbak', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'airbox_fifty_lab_venues',
+        title: 'Fifty Lab Venues',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'Fifty Lab is een festival dat plaatsvindt in Brussel en dat verschillende locaties in de stad gebruikt. In deze video nemen we je mee naar de verschillende locaties waar het festival plaatsvindt.',
+        image: AIRBOX_FIFTY_LAB_VENUES,
+        tags: ['Airbox', 'Festival', 'Brussel', 'Muziek', 'Social Media'],
+        personal: false,
+        credits: [
+            { personID: 'femkebeeckman', function: 'Camera' },
+            { personID: 'femkebeeckman', function: 'Acteur' },
+            { personID: 'brentcauberghs', function: 'Productie' },
+            { personID: 'brentcauberghs', function: 'Regie' },
+            { personID: 'brentcauberghs', function: 'Camera' },
+            { personID: 'jamesdepotter', function: 'Met dank aan' },
+            { personID: 'sazanloomans', function: 'Met dank aan' },
+            { personID: 'kianikhatrichetri', function: 'Regie' },
+            { personID: 'kianikhatrichetri', function: 'Camera' },
+            { personID: 'kianikhatrichetri', function: 'Acteur' },
+            { personID: 'kianikhatrichetri', function: 'Productie' },
+            { personID: 'aimyvandenbemden', function: 'Productie' },
+            { personID: 'stevenvantichelen', function: 'Acteur' },
+            { personID: 'stevenvantichelen', function: 'Chef Geluid' },
+            { personID: 'pimvergeest', function: 'Met dank aan' },
+            { personID: 'mozalbak', function: 'Camera' },
+            { personID: 'mozalbak', function: 'Regie' }
+        ]
+    },
+    // {
+    //     id: 'airbox_secret_show_unannounced',
+    //     title: 'Secret Show Unannounced',
+    //     subtitle: 'Airbox',
+    //     workyear: '2425',
+    //     description: 'Een geheime show die plaatsvond in Brussel, georganiseerd door Airbox. Deze video geeft een sneak peek van de show en de sfeer die er hing.',
+    //     image: AIRBOX_SECRET_SHOW_UNANNOUNCED, // TODO FIXME XXX
+    //     tags: ['Airbox', 'Festival', 'Brussel', 'Muziek', 'Social Media'],
+    //     personal: false,
+    //     credits: [
+    //         { personID: 'femkebeeckman', function: 'Camera' },
+    //         { personID: 'femkebeeckman', function: 'Acteur' },
+    //         { personID: 'brentcauberghs', function: 'Productie' },
+    //         { personID: 'brentcauberghs', function: 'Regie' },
+    //         { personID: 'brentcauberghs', function: 'Camera' },
+    //         { personID: 'jamesdepotter', function: 'Met dank aan' },
+    //         { personID: 'sazanloomans', function: 'Met dank aan' },
+    //         { personID: 'kianikhatrichetri', function: 'Regie' },
+    //         { personID: 'kianikhatrichetri', function: 'Camera' },
+    //         { personID: 'kianikhatrichetri', function: 'Acteur' },
+    //         { personID: 'kianikhatrichetri', function: 'Productie' },
+    //         { personID: 'aimyvandenbemden', function: 'Productie' },
+    //         { personID: 'stevenvantichelen', function: 'Acteur' },
+    //         { personID: 'stevenvantichelen', function: 'Chef Geluid' },
+    //         { personID: 'pimvergeest', function: 'Met dank aan' },
+    //         { personID: 'mozalbak', function: 'Camera' },
+    //         { personID: 'mozalbak', function: 'Regie' }
+    //     ]
+    // },
+    {
+        id: 'airbox_winterevent',
+        title: 'Sketches Winterevent',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'De 3 sketches in samenwerking met XLair voor het kerst feestje.',
+        image: AIRBOX_WINTEREVENT,
+        tags: ['Airbox', 'Kerstfeest', 'XLair', 'Comedy', 'Sketch'],
+        personal: false,
+        credits: [
+            { personID: 'femkebeeckman', function: 'Geluid' },
+            { personID: 'femkebeeckman', function: 'Regie' },
+            { personID: 'femkebeeckman', function: 'Montage' },
+            { personID: 'brentcauberghs', function: 'Camera' },
+            { personID: 'brentcauberghs', function: 'Montage' },
+            { personID: 'kianikhatrichetri', function: 'Art Director' },
+            { personID: 'aimyvandenbemden', function: 'Regie' },
+            { personID: 'stevenvantichelen', function: 'Camera' },
+            { personID: 'stevenvantichelen', function: 'Montage' },
+            { personID: 'mozalbak', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'airbox_sob_2025_eindceremonie',
+        title: 'Aftermovie Special Olympics 2025 eindceremonie',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'Korte aftermovie voor de eindceremonie (op led-schermen) van de Special Olympics 2025.',
+        image: AIRBOX_SOB_2025_EINDCEREMONIE,
+        tags: ['Airbox', 'SOB', 'Sport', 'Aftermovie'],
+        personal: false,
+        credits: [
+            { personID: 'brentcauberghs', function: 'Camera' },
+            { personID: 'warddeleersnyder', function: 'Camera' },
+            { personID: 'kianikhatrichetri', function: 'Camera' },
+            { personID: 'kianikhatrichetri', function: 'Productie' },
+            { personID: 'stevenvantichelen', function: 'Camera' },
+            { personID: 'stevenvantichelen', function: 'Productie' },
+            { personID: 'lukasvleugels', function: 'Camera' },
+            { personID: 'mozalbak', function: 'Camera' }
+        ]
+    },
+    {
+        id: 'airbox_sob_2025_bocce_tafeltennis',
+        title: 'Reportage Bocce & Tafeltennis',
+        subtitle: 'Airbox',
+        workyear: '2425',
+
+        description: 'Bocce, tafeltennis en vooral heel veel enthousiasme 🌞🤩',
+        image: AIRBOX_SOB_2025_BOCCE_TAFELTENNIS,
+        tags: ['Airbox', 'Sport', 'SOB', 'XLair', 'Bocce', 'Tafeltennis', 'Social Media'],
+        personal: false,
+        credits: [
+            { personID: 'margauxdecleyre', function: 'Camera' },
+            { personID: 'aimyvandenbemden', function: 'Montage' }
+        ]
+    },
+    {
+        id: 'airbox_sob_2025_basket',
+        title: 'Reportage Basket',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'Reportage in samenwerking met de studenten van radio voor hun socials. Video over basket op de special olympics in Kortrijk.',
+        image: AIRBOX_SOB_2025_BASKET,
+        tags: ['Airbox', 'Sport', 'SOB', 'Basket', 'XLair', 'Social Media'],
+        personal: false,
+        credits: [
+            { personID: 'brentcauberghs', function: 'Regie' },
+            { personID: 'kianikhatrichetri', function: 'Productie' },
+            { personID: 'stevenvantichelen', function: 'Productie' }
+        ]
+    },
+    {
+        id: 'taz',
+        title: 'Theater Aan Zee',
+        subtitle: 'Airbox',
+        workyear: '2425',
+        description: 'Met een team van 15 studenten en 6 leerkrachten trokken we naar Oostende voor het kunstenfestival Theater Aan Zee. In samenwerking met TAZ verzorgden we videobeelden over het festival, die op de laatste dag op een groot scherm werden getoond.',
+        image: AIRBOX_TAZ,
+        tags: ['Airbox', 'Theater aan Zee', 'Festival', 'Reportage', 'Aftermovie', 'Portret'],
+        personal: false,
+        credits: [
+            { personID: 'margauxdecleyre', function: 'Regie' },
+            { personID: 'aimyvandenbemden', function: 'Productie' },
+            { personID: 'mirademulder', function: 'Regie' },
+            { personID: 'alexandramees', function: 'Productie' },
+            { personID: 'amelieschreurs', function: 'Productie' },
+            { personID: 'sazanloomans', function: 'Productie' },
+            { personID: 'opheliadelhaye', function: 'Regie' },
+            { personID: 'julescnudde', function: 'Regie' },
+            { personID: 'warddeleersnyder', function: 'Techniek' },
+            { personID: 'femkebeeckman', function: 'Techniek' },
+            { personID: 'khanyisilevanderheide', function: 'Regie' },
+            { personID: 'linavannerum', function: 'Regie' },
+            { personID: 'owenvandoorslaer', function: 'Techniek' },
+            { personID: 'marievermeulen', function: 'Regie' },
+            { personID: 'thanitsornverschueren', function: 'Techniek' }
+        ]
+    },
+    {
+
+        id: 'bc_hybride_2023',
+        title: 'Bachelorclass Hybride 2023',
+        subtitle: 'Airbox',
+        workyear: '2324',
+        description: 'Bachelorclass Hybride, captatie van een dans performance.',
+        image: AIRBOX_BACHELORCLASS_HYBRIDE,
+        tags: ['Airbox', 'Bachelorclass', 'Hybride', 'Dans'],
+        personal: false,
+        credits: [
+            { personID: 'lukakeunen', function: 'Techniek' }
+        ]
+    },
+    {
+        id: '2023_airbox_take_5_brussels',
+        title: 'TAKE 5 Brussels - Trailer',
+        subtitle: 'Airbox',
+        workyear: '2324',
+        description: '5 protagonisten met verschillende achtergronden en functies in de maatschappij besteden samen een dag door in het Koninklijk museum van Brussel.',
+        image: AIRBOX_TAKE_5_BRUSSELS,
+        tags: ['Airbox', 'Trailer'],
+        personal: false,
+        credits: [
+            { personID: 'lukakeunen', function: 'Regie' }
+        ]
+    },
+    {
+        id: '2023_impulsivegirl',
+        title: 'Impulsive Girl Tour',
+        subtitle: 'Airbox',
+        workyear: '2324',
+        description: '"Girls ‘n Cans" is een graffiti project dat zich over een periode van drie dagen afspeelt, 24, 25 en 26 mei. Het project brengt 10 vrouwelijke kunstenaars samen die met hun creatieve talenten de nadruk willen leggen op de rol van vrouwen in de kunstwereld. Het vindt plaats op 10 verschillende locaties in West-Vlaanderen, Weverik-Menen, tijdens het weekend van de openwerfdagen. Elke artiest krijgt 1 locatie, 1 gevel om een grafitti werk op te maken. Dit doen ze over deze 3 dagen. Het event zelf is ook een wandelroute voor bezoekers die van gevel naar gevel wandelen.',
+        image: RBX23_IMPULSIVE,
+        tags: ['Airbox', 'Aftermovie', 'Graffiti'],
+        personal: false,
+        credits: [
+            { personID: 'lukakeunen', function: 'Regie' }
+        ]
+    },
+    {
+        id: 'urban_motion_portraits',
+        title: 'Urban Motion Portraits',
+        subtitle: 'Airbox',
+        workyear: '2324',
+        description: 'Een videoportret van drie urban atleten. Een danseres, een breakdancer en een freerunner delen hun verhaal en vertellen over hun passie voor de sport, hun doelen, de kernwaarden ervan, en delen enkele persoonlijke verhalen over hoe ze uitdagingen binnen de sport aangaan en hoe dit hun persoonlijke groei heeft beïnvloed. Het videoportret combineert deze interviews met beelden van de sporters in actie, met behulp van het parallaxeffect en 3D-fotografie.',
+        image: AIRBOX_URBAN_MOTION_PORTRAITS,
+        tags: ['Airbox', 'Portret', 'Urban', 'Sport'],
+        personal: false,
+        credits: [
+            { personID: 'lukakeunen', function: 'Camera' }
+        ]
+    },
+    {
+        id: 'bp_ophelia',
+        title: 'No Words!',
+        subtitle: 'Bachelorproef',
+        workyear: '2425',
+        description: 'Bachelorproef: Wat brengt ondertiteling bij aan een audiovisueel verhaal? Geïnspireerd op het Kuleshov Effect.',
+        image: BP_OPHELIA,
+        tags: ['Bachelorproef', 'Fictie', 'Film'],
+        personal: false,
+        credits: [
+            { personID: 'opheliadelhaye', function: 'Maker' }
+        ]
+    },
+    {
+        id: 'bp_jules_evolutie_van_muziek',
+        title: 'Evolutie van muziek op de Belgische TV',
+        subtitle: 'Bachelorproef',
+        workyear: '2425',
+        description: 'Een video-installatie die het verhaal vertelt van de evolutie van muziek op de Belgische TV, in documentaire stijl.',
+        image: BP_JULES_EVOLUTIE_VAN_MUZIEK,
+        tags: ['Bachelorproef', 'Muziek', 'Docu'],
+        personal: false,
+        credits: [
+            { personID: 'julescnudde', function: 'Maker' }
+        ]
+    },
+    {
+        id: 'bp_4d_video',
+        title: '4D Video, wat kan je er mee?',
+        subtitle: 'Bachelorproef',
+        workyear: '2425',
+        description: 'Een onderzoek rond 4D video en wat je ermee kan doen.',
+        image: BP_4D_VIDEO,
+        tags: ['Bachelorproef', '4D'],
+        personal: false,
+        credits: [
+            { personID: 'maartenaerssens', function: 'Maker' }
+        ]
+    },
+    {
+        id: 'bp_snorricam_v2',
+        title: 'Bayerische Motoren Werken',
+        subtitle: 'Bachelorproef',
+        workyear: '2425',
+        description: 'Een video van mijn eindwerk genaamd de snorricam V2',
+        image: BP_SNORRICAM_V2,
+        tags: ['Bachelorproef', 'Snorricam', 'Auto'],
+        personal: false,
+        credits: [
+            { personID: 'owenvandoorslaer', function: 'Maker' }
+        ]
+    },
+    {
+        id: 'bp_radio_slaimy',
+        title: 'Radio Slaimy',
+        subtitle: 'Bachelorproef',
+        workyear: '2425',
+        description: 'Radio Slaimy is een interactieve, funky website. Het project combineert audiovisuele storytelling, webdesign en digitale nostalgie tot een unieke online beleving waar gebruikers zelf mee interageren. Scan de QR code voor de website <3 ENJOY XD',
+        image: BP_RADIO_SLAIMY,
+        tags: ['Bachelorproef', 'Podcast', 'Website'],
+        personal: false,
+        credits: [
+            { personID: 'aimyvandenbemden', function: 'Maker' }
+        ]
+    },
+    {
+        id: 'bp_water_projectie',
+        title: 'Water Projectie',
+        subtitle: 'Bachelorproef',
+        workyear: '2425',
+        description: 'Een korte video die de avond van mijn voorstelling samen vat.',
+        image: BP_WATER_PROJECTIE,
+        tags: ['Bachelorproef', 'Visuals', 'Waterprojectie'],
+        personal: false,
+        credits: [
+            { personID: 'casderidder', function: 'Maker' }
+        ]
+    },
+    {
+        id: 'bp_luigi_colzato_floodgates',
+        title: 'Floodgates',
+        subtitle: 'Bachelorproef',
+        workyear: '2425',
+        description: 'Een videoclip voor het nummer Floodgates van Luigi Colzato. Gemaakt aan de hand van Luma.ai en Unreal Engine.',
+        image: BP_LUIGI_COLZATO_FLOODGATES,
+        tags: ['Bachelorproef', 'Unreal Engine', 'Videoclip'],
+        personal: false,
+        credits: [
+            { personID: 'warddeleersnyder', function: 'Maker' }
+        ]
+    },
+    {
+        id: 'bp_bent_fierens',
+        title: 'Bent Fierens',
+        subtitle: 'Bachelorproef',
+        workyear: '2425',
+        description: 'Hoe kunnen experimentele filmtechnieken op een succesvolle manier worden toegepast binnen een commerciële film? Een zoektocht naar een visuele stijl als regisseur. Voor meubel ontwerper Bent Fierens maakte ik een brandingfilm aan de hand van mijn onderzoek waarbij ik verschillende visuele technieken toepaste.',
+        image: BP_BENT_FIERENS,
+        tags: ['Bachelorproef', 'Film', 'Design'],
+        personal: false,
+        credits: [
+            { personID: 'pimvergeest', function: 'Maker' }
+        ]
+    },
+    {
+        id: 'bp_maxim',
+        title: 'Interactiviteit en automatisatie',
+        subtitle: 'Bachelorproef',
+        workyear: '2425',
+        description: 'Backstage: een suite aan software tools om een productie interactief te maken en te automatiseren, gratis en open source',
+        image: BP_MAXIM,
+        tags: ['Bachelorproef', 'Software', 'Automatisatie'],
+        personal: false,
+        credits: [
+            { personID: 'maximvanbiesen', function: 'Maker' }
         ]
     }
 
