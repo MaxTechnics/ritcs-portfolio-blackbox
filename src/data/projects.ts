@@ -93,7 +93,7 @@ type PortfolioFunction = 'Camera' |
     'Art Director' |
     'Animatie' |
     'Compositing' |
-    'Met dank aan';
+    'Met dank aan' | string;
 type Credit = {
     personID: StudentId;
     function: PortfolioFunction;
@@ -636,7 +636,7 @@ export const projects: PortfolioProject[] = [
     //     title: 'Connect',
     //     subtitle: 'Praktijk 3',
     //     workyear: '2324',
-    //     description: '', // TODO
+    //     description: 'Studio DOP maakte een installatie waar je een eigen visueel kunstwerk maakt op basis van jouw dansmoves!', // TODO
     //     // image: PRAKT_3_CONNECT, // FIXME
     //     image: '',
     //     tags: ['Installatie'],
@@ -1557,7 +1557,7 @@ export const projects: PortfolioProject[] = [
         tags: ['Bachelorproef', 'Software', 'Automatisatie'],
         personal: false,
         credits: [
-            { personID: 'maximvanbiesen', function: 'Maker' }
+            { personID: 'maximcoppieters', function: 'Maker' }
         ]
     }
 
