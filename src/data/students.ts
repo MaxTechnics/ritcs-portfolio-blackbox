@@ -454,6 +454,7 @@ export const students: { [name: string]: PortfolioStudent } = {
         last_name: 'Depotter',
         job_titles: ['Lichtontwerp', 'Licht programmer'],
         traject: 'AVT',
+        website: 'https://scatcheye.com',
         img: JAMES
     },
 
