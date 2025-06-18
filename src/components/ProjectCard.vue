@@ -140,12 +140,13 @@ defineProps<{
 	position: relative;
 }
 .projcard-title {
-	font-family: 'Voces', 'Open Sans', arial, sans-serif;
+	// font-family: 'Voces', 'Open Sans', arial, sans-serif;
 	font-size: 24px;
 }
 .projcard-subtitle {
-	font-family: 'Voces', 'Open Sans', arial, sans-serif;
-	color: #888;
+	// font-family: 'Voces', 'Open Sans', arial, sans-serif;
+	// color: #888;
+	color: var(--font_color);
 }
 .projcard-bar {
 	left: -2px;
@@ -183,7 +184,8 @@ defineProps<{
 .projcard-description {
 	z-index: 10;
 	font-size: 15px;
-	color: #424242;
+	// color: #424242;
+	color: var(--font_color);
 	height: 125px;
 	overflow: hidden;
 	text-overflow: ellipsis;
