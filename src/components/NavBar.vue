@@ -41,6 +41,7 @@ img {
     // justify-content: end;
     justify-content: center;
     border-bottom: 3px solid var(--shadow_color);
+    text-transform: uppercase;
 }
 
 .nav__btn {

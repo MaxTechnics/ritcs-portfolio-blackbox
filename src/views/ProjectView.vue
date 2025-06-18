@@ -52,6 +52,10 @@ const filteredProjects = computed(() => {
 </script>
 
 <style lang="scss" scoped>
+h2 {
+    text-transform: uppercase;
+}
+
 .project_container {
     display: flex;
     align-items: center;

@@ -114,6 +114,9 @@ const filteredAndSortedStudents = computed(() => {
 </script>
 
 <style lang="scss" scoped>
+h2 {
+    text-transform: uppercase;
+}
 .usercontainer {
     display: flex;
     flex-direction: column;
