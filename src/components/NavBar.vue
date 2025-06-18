@@ -2,10 +2,10 @@
     <nav class="nav">
         <img :src="rbxlogo">
         <div class="nav__links">
-            <RouterLink :class="{ active: route.path === '/' }" to="/">Home</RouterLink>
+            <RouterLink :class="{ active: route.path === '/' }" to="/">Studenten</RouterLink>
             <RouterLink :class="{ active: route.path === '/projects' }" to="/projects">Projecten</RouterLink>
-            <RouterLink :class="{ active: route.path === '/functions' }" to="/functions">Functies</RouterLink>
-            <RouterLink :class="{ active: route.path === '/students' }" to="/students">Studenten</RouterLink>
+            <!-- <RouterLink :class="{ active: route.path === '/functions' }" to="/functions">Functies</RouterLink> -->
+            <!-- <RouterLink :class="{ active: route.path === '/students' }" to="/students">Studenten</RouterLink> -->
         </div>
         <div class="right"></div>
         <!-- <button class="nav__btn">Log Out</button> -->
